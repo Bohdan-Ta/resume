@@ -1,21 +1,9 @@
-import { ArrowForward } from '@mui/icons-material'
+import ArrowForward from '@mui/icons-material/ArrowForward'
 import { Box, Button, Divider, IconButton, Stack, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import { FaGithub, FaLinkedinIn, FaTelegramPlane } from 'react-icons/fa'
-import { HiOutlineMail } from 'react-icons/hi'
 import { useContactDialog } from '@/components/contact/ContactDialogContext'
+import { profile, SOCIAL_LINKS } from '@/data/profile'
 import { PAGE_GUTTER, PAGE_MAX_WIDTH } from '@/theme/layout'
-
-const SOCIALS = [
-  { href: 'mailto:btatarchuk@progeek.de', label: 'Email', icon: HiOutlineMail },
-  {
-    href: 'https://www.linkedin.com/in/bohdan-tatarchuk-4961907a/',
-    label: 'LinkedIn',
-    icon: FaLinkedinIn,
-  },
-  { href: 'https://github.com/Bohdan-Ta', label: 'GitHub', icon: FaGithub },
-  { href: 'https://t.me/tbukraine', label: 'Telegram', icon: FaTelegramPlane },
-]
 
 export const Footer = () => {
   const { t } = useTranslation()
@@ -51,7 +39,7 @@ export const Footer = () => {
             >
               <Typography
                 component="a"
-                href="mailto:btatarchuk@progeek.de"
+                href={`mailto:${profile.email}`}
                 sx={{
                   fontFamily: 'h1.fontFamily',
                   fontSize: { xs: '1.5rem', md: '2rem' },
@@ -63,7 +51,7 @@ export const Footer = () => {
                   '&:hover': { color: 'primary.main' },
                 }}
               >
-                btatarchuk@progeek.de
+                {profile.email}
               </Typography>
               <Button
                 variant="outlined"
@@ -81,24 +69,27 @@ export const Footer = () => {
           </Box>
 
           <Stack direction="row" sx={{ gap: 0.5 }}>
-            {SOCIALS.map(({ href, label, icon: Icon }) => (
-              <IconButton
-                key={label}
-                component="a"
-                href={href}
-                target={href.startsWith('http') ? '_blank' : undefined}
-                rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                aria-label={label}
-                size="medium"
-                sx={{
-                  color: 'text.secondary',
-                  transition: 'color 200ms',
-                  '&:hover': { color: 'primary.main' },
-                }}
-              >
-                <Icon size={18} />
-              </IconButton>
-            ))}
+            {SOCIAL_LINKS.map(({ id, href, label, icon: Icon }) => {
+              const external = href.startsWith('http')
+              return (
+                <IconButton
+                  key={id}
+                  component="a"
+                  href={href}
+                  target={external ? '_blank' : undefined}
+                  rel={external ? 'noopener noreferrer' : undefined}
+                  aria-label={label}
+                  size="medium"
+                  sx={{
+                    color: 'text.secondary',
+                    transition: 'color 200ms',
+                    '&:hover': { color: 'primary.main' },
+                  }}
+                >
+                  <Icon size={18} />
+                </IconButton>
+              )
+            })}
           </Stack>
         </Stack>
 

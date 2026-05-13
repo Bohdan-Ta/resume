@@ -16,7 +16,7 @@ export const profile = {
 } as const
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { id: 'email', href: 'mailto:btatarchuk@progeek.de', label: 'Email', icon: HiOutlineMail },
+  { id: 'email', href: `mailto:${profile.email}`, label: 'Email', icon: HiOutlineMail },
   {
     id: 'linkedin',
     href: 'https://www.linkedin.com/in/bohdan-tatarchuk-4961907a/',

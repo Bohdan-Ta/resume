@@ -1,4 +1,4 @@
-import { ArrowForward } from '@mui/icons-material'
+import ArrowForward from '@mui/icons-material/ArrowForward'
 import { Box, Button, Stack, Typography } from '@mui/material'
 import { alpha } from '@mui/material/styles'
 import { useTranslation } from 'react-i18next'

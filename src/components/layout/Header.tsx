@@ -134,7 +134,7 @@ export const Header = () => {
             gap: 2,
           }}
         >
-          <Logo onClick={() => setDrawerOpen(false)} />
+          <Logo />
 
           {isDesktop && (
             <Stack
