@@ -125,6 +125,7 @@ const FullProjectCard = ({ project }: CardProps) => {
         <Box
           sx={{
             position: 'relative',
+            width: '100%',
             aspectRatio: '16 / 10',
             overflow: 'hidden',
             bgcolor: 'background.default',
@@ -137,6 +138,9 @@ const FullProjectCard = ({ project }: CardProps) => {
             loading="lazy"
             className="project-image"
             sx={{
+              position: 'absolute',
+              inset: 0,
+              display: 'block',
               width: '100%',
               height: '100%',
               objectFit: 'cover',
