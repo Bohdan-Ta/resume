@@ -86,6 +86,9 @@
       "github": "GitHub",
       "live": "Live-Demo"
     },
+    "earlierHeading": "Frühere Arbeiten",
+    "showEarlier": "Frühere Arbeiten anzeigen ({{count}})",
+    "hideEarlier": "Frühere Arbeiten ausblenden",
     "items": {
       "wir-gehen-los": {
         "title": "Wir gehen los",
