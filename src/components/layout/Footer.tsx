@@ -43,35 +43,40 @@ export const Footer = () => {
             >
               {t('footer.eyebrow', { defaultValue: '// Get in touch' })}
             </Typography>
-            <Typography
-              component="a"
-              href="mailto:btatarchuk@progeek.de"
-              sx={{
-                fontFamily: 'h1.fontFamily',
-                fontSize: { xs: '1.5rem', md: '2rem' },
-                fontWeight: 300,
-                letterSpacing: '-0.02em',
-                color: 'text.primary',
-                textDecoration: 'none',
-                transition: 'color 200ms',
-                '&:hover': { color: 'primary.main' },
-              }}
+            <Stack
+              direction={{ xs: 'column', sm: 'row' }}
+              spacing={{ xs: 2, sm: 3 }}
+              sx={{ alignItems: { xs: 'flex-start', sm: 'center' }, mt: 0.5 }}
             >
-              btatarchuk@progeek.de
-            </Typography>
-            <Button
-              variant="outlined"
-              endIcon={<ArrowForward />}
-              onClick={openContact}
-              sx={{
-                mt: 2,
-                borderColor: 'divider',
-                color: 'text.primary',
-                '&:hover': { borderColor: 'primary.main', bgcolor: 'transparent' },
-              }}
-            >
-              {t('contact.openCta')}
-            </Button>
+              <Typography
+                component="a"
+                href="mailto:btatarchuk@progeek.de"
+                sx={{
+                  fontFamily: 'h1.fontFamily',
+                  fontSize: { xs: '1.5rem', md: '2rem' },
+                  fontWeight: 300,
+                  letterSpacing: '-0.02em',
+                  color: 'text.primary',
+                  textDecoration: 'none',
+                  transition: 'color 200ms',
+                  '&:hover': { color: 'primary.main' },
+                }}
+              >
+                btatarchuk@progeek.de
+              </Typography>
+              <Button
+                variant="outlined"
+                endIcon={<ArrowForward />}
+                onClick={openContact}
+                sx={{
+                  borderColor: 'divider',
+                  color: 'text.primary',
+                  '&:hover': { borderColor: 'primary.main', bgcolor: 'transparent' },
+                }}
+              >
+                {t('contact.openCta')}
+              </Button>
+            </Stack>
           </Box>
 
           <Stack direction="row" sx={{ gap: 0.5 }}>
