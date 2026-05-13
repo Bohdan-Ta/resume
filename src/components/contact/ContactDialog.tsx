@@ -23,7 +23,7 @@ import { useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
 import { z } from 'zod'
 import { profile } from '@/data/profile'
-import { isEmailJsConfigured, sendContactMessage } from '@/lib/emailjs'
+import { EmailJsError, isEmailJsConfigured, sendContactMessage } from '@/lib/emailjs'
 
 const buildSchema = (t: (key: string) => string) =>
   z.object({
@@ -83,8 +83,9 @@ export const ContactDialog = ({ open, onClose }: Props) => {
       setToast({ kind: 'success', message: t('contact.feedback.success') })
       reset()
       onClose()
-    } catch {
-      setToast({ kind: 'error', message: t('contact.feedback.error') })
+    } catch (err) {
+      const detail = err instanceof EmailJsError ? ` (${err.status ?? '?'}: ${err.message})` : ''
+      setToast({ kind: 'error', message: `${t('contact.feedback.error')}${detail}` })
     }
   }
 

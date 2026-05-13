@@ -7,7 +7,8 @@ const HIGHLIGHTS = ['languages', 'approach', 'outside'] as const
 
 export const About = () => {
   const { t } = useTranslation()
-  const paragraphs = t('about.paragraphs', { returnObjects: true }) as string[]
+  const rawParagraphs = t('about.paragraphs', { returnObjects: true })
+  const paragraphs = Array.isArray(rawParagraphs) ? (rawParagraphs as string[]) : []
 
   return (
     <SectionContainer id="about">

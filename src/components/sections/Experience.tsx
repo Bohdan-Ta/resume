@@ -28,9 +28,10 @@ export const Experience = () => {
         {TIMELINE.map((entry) => {
           const titleKey = `timeline.entries.${entry.id}.title`
           const subtitleKey = `timeline.entries.${entry.id}.subtitle`
-          const bullets = t(`timeline.entries.${entry.id}.bullets`, {
+          const rawBullets = t(`timeline.entries.${entry.id}.bullets`, {
             returnObjects: true,
-          }) as string[]
+          })
+          const bullets = Array.isArray(rawBullets) ? (rawBullets as string[]) : []
           const dateLabel = entry.to === 'present' ? t('timeline.present') : entry.to
           const kindLabel = t(`timeline.kinds.${entry.kind}`)
 

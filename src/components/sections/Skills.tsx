@@ -40,6 +40,10 @@ const levelStyle = (level: SkillLevel) => {
         borderStyle: 'dashed',
         '& .level-dot': { bgcolor: 'text.disabled', opacity: 0.4 },
       }
+    default: {
+      const _exhaustive: never = level
+      return _exhaustive
+    }
   }
 }
 

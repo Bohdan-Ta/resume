@@ -8,7 +8,10 @@ export const LanguageSwitch = () => {
   const { t, i18n } = useTranslation()
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null)
   const open = Boolean(anchorEl)
-  const current = (i18n.resolvedLanguage ?? i18n.language).split('-')[0] as SupportedLanguage
+  const detected = (i18n.resolvedLanguage ?? i18n.language).split('-')[0] ?? 'en'
+  const current: SupportedLanguage = (SUPPORTED_LANGUAGES as readonly string[]).includes(detected)
+    ? (detected as SupportedLanguage)
+    : 'en'
 
   const handleSelect = (lng: SupportedLanguage) => {
     void i18n.changeLanguage(lng)
