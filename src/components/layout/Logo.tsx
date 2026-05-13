@@ -15,7 +15,7 @@ export const Logo = ({ onClick }: Props) => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
         onClick?.()
       }}
-      aria-label="Bohdan Tatarchuk — back to top"
+      aria-label="Bohdan Tatarchuk - back to top"
       sx={{
         display: 'inline-flex',
         alignItems: 'center',

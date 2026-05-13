@@ -36,7 +36,7 @@ const ProjectLinks = ({ project }: CardProps) => {
             href={project.links.github}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`${title} — ${t('projects.links.github')}`}
+            aria-label={`${title} - ${t('projects.links.github')}`}
             sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main' } }}
           >
             <FaGithub size={16} />
@@ -50,7 +50,7 @@ const ProjectLinks = ({ project }: CardProps) => {
             href={project.links.live}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`${title} — ${t('projects.links.live')}`}
+            aria-label={`${title} - ${t('projects.links.live')}`}
             sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main' } }}
           >
             <HiOutlineExternalLink size={18} />
