@@ -64,7 +64,7 @@ const NavLink = ({
       transition: 'color 200ms',
       '&::before': {
         content: `"0${index + 1}"`,
-        color: active ? 'primary.main' : 'text.disabled',
+        color: active ? 'primary.main' : 'text.tertiary',
         fontSize: '0.625rem',
       },
       '&::after': {
@@ -135,7 +135,12 @@ export const Header = () => {
           <Logo onClick={() => setDrawerOpen(false)} />
 
           {isDesktop && (
-            <Stack direction="row" component="nav" aria-label="Main navigation" sx={{ gap: 0.5 }}>
+            <Stack
+              direction="row"
+              component="nav"
+              aria-label={t('nav.ariaPrimary')}
+              sx={{ gap: 0.5 }}
+            >
               {NAV_ITEMS.map((item, idx) => (
                 <NavLink
                   key={item.id}
@@ -153,7 +158,7 @@ export const Header = () => {
             <ThemeToggle />
             {!isDesktop && (
               <IconButton
-                aria-label="Open navigation"
+                aria-label={t('nav.openMenu')}
                 onClick={() => setDrawerOpen(true)}
                 sx={{ color: 'text.primary' }}
               >
@@ -186,7 +191,7 @@ export const Header = () => {
           <Logo onClick={() => setDrawerOpen(false)} />
         </Stack>
         <Divider />
-        <List component="nav" aria-label="Main navigation" sx={{ mt: 2 }}>
+        <List component="nav" aria-label={t('nav.ariaMobile')} sx={{ mt: 2 }}>
           {NAV_ITEMS.map((item, idx) => {
             const active = activeId === item.id
             return (
@@ -205,7 +210,7 @@ export const Header = () => {
                     sx={{
                       fontFamily: 'overline.fontFamily',
                       fontSize: '0.75rem',
-                      color: active ? 'primary.main' : 'text.disabled',
+                      color: active ? 'primary.main' : 'text.tertiary',
                       minWidth: 24,
                     }}
                   >

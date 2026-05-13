@@ -12,7 +12,7 @@ export const SectionEyebrow = ({ index, label }: Props) => (
       alignItems: 'baseline',
       gap: 1,
       mb: 2,
-      color: 'text.disabled',
+      color: 'text.tertiary',
       fontFamily: 'overline.fontFamily',
       letterSpacing: '0.12em',
     }}

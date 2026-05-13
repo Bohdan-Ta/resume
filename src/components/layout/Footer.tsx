@@ -40,7 +40,7 @@ export const Footer = () => {
           <Box>
             <Typography
               variant="overline"
-              sx={{ color: 'text.disabled', display: 'block', letterSpacing: '0.12em' }}
+              sx={{ color: 'text.tertiary', display: 'block', letterSpacing: '0.12em' }}
             >
               {t('footer.eyebrow', { defaultValue: '// Get in touch' })}
             </Typography>
@@ -111,7 +111,7 @@ export const Footer = () => {
             gap: 1,
             fontFamily: 'overline.fontFamily',
             fontSize: '0.75rem',
-            color: 'text.disabled',
+            color: 'text.tertiary',
           }}
         >
           <span>© {year} Bohdan Tatarchuk</span>

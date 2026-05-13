@@ -97,6 +97,8 @@ export const ContactDialog = ({ open, onClose }: Props) => {
         fullScreen={fullScreen}
         fullWidth
         maxWidth="sm"
+        aria-labelledby="contact-dialog-title"
+        aria-describedby="contact-dialog-desc"
         slotProps={{
           paper: {
             sx: {
@@ -131,6 +133,7 @@ export const ContactDialog = ({ open, onClose }: Props) => {
               {`// ${t('contact.eyebrow')}`}
             </Typography>
             <Typography
+              id="contact-dialog-title"
               variant="h4"
               sx={{ fontSize: { xs: '1.5rem', sm: '1.75rem' }, fontWeight: 400, mt: 0.5 }}
             >
@@ -148,7 +151,9 @@ export const ContactDialog = ({ open, onClose }: Props) => {
         </DialogTitle>
 
         <DialogContent sx={{ pt: 1 }}>
-          <Typography sx={{ color: 'text.secondary', mb: 3 }}>{t('contact.intro')}</Typography>
+          <Typography id="contact-dialog-desc" sx={{ color: 'text.secondary', mb: 3 }}>
+            {t('contact.intro')}
+          </Typography>
           <Box component="form" id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
             <Stack spacing={2.5}>
               <TextField
@@ -187,7 +192,7 @@ export const ContactDialog = ({ open, onClose }: Props) => {
             sx={{
               display: 'block',
               mt: 2,
-              color: 'text.disabled',
+              color: 'text.tertiary',
               fontFamily: 'caption.fontFamily',
             }}
           >

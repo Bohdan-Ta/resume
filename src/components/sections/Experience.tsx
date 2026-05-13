@@ -55,7 +55,7 @@ export const Experience = () => {
                   borderRadius: '50%',
                   bgcolor: 'background.default',
                   border: '2px solid',
-                  borderColor: entry.to === 'present' ? 'primary.main' : 'text.disabled',
+                  borderColor: entry.to === 'present' ? 'primary.main' : 'text.tertiary',
                   boxShadow:
                     entry.to === 'present'
                       ? (theme) => `0 0 0 4px ${theme.palette.primary.main}25`
@@ -83,7 +83,7 @@ export const Experience = () => {
                   variant="caption"
                   sx={{
                     fontFamily: 'caption.fontFamily',
-                    color: 'text.disabled',
+                    color: 'text.tertiary',
                     fontSize: '0.7rem',
                     textTransform: 'uppercase',
                     letterSpacing: '0.1em',

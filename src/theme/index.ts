@@ -54,12 +54,23 @@ const sharedOptions: ThemeOptions = {
         },
       },
     },
+    MuiButtonBase: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          '&:focus-visible': {
+            outline: `2px solid ${theme.palette.primary.main}`,
+            outlineOffset: 2,
+            borderRadius: radius.sm,
+          },
+        }),
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
           borderRadius: radius.md,
           paddingInline: 24,
-          height: 40,
+          minHeight: 44,
           fontWeight: 500,
           transition: `background-color ${duration.fast}ms ${easing.standard}, border-color ${duration.fast}ms ${easing.standard}`,
         },

@@ -53,7 +53,7 @@ export const Hero = () => {
           </Typography>
           <Typography
             sx={{
-              color: 'text.disabled',
+              color: 'text.tertiary',
               mb: 4,
               fontFamily: 'caption.fontFamily',
               fontSize: '0.875rem',

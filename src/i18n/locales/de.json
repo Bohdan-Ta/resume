@@ -13,6 +13,10 @@
     "about": "Über mich",
     "skills": "Fähigkeiten",
     "projects": "Projekte",
+    "ariaPrimary": "Hauptnavigation",
+    "ariaMobile": "Mobile Navigation",
+    "openMenu": "Navigation öffnen",
+    "closeMenu": "Navigation schließen",
     "experience": "Werdegang",
     "contact": "Kontakt"
   },

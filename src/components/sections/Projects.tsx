@@ -91,7 +91,7 @@ export const Projects = () => {
               >
                 <Typography
                   variant="overline"
-                  sx={{ color: 'text.disabled', letterSpacing: '0.12em' }}
+                  sx={{ color: 'text.tertiary', letterSpacing: '0.12em' }}
                 >
                   {project.year} · {t(`projects.roles.${project.role}`)}
                 </Typography>
@@ -104,7 +104,6 @@ export const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${t(`${project.i18nKey}.title`)} — ${t('projects.links.github')}`}
-                        size="small"
                         sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main' } }}
                       >
                         <FaGithub size={16} />
@@ -119,7 +118,6 @@ export const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${t(`${project.i18nKey}.title`)} — ${t('projects.links.live')}`}
-                        size="small"
                         sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main' } }}
                       >
                         <HiOutlineExternalLink size={18} />

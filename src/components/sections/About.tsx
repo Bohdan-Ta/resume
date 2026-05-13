@@ -50,7 +50,7 @@ export const About = () => {
               <Typography
                 variant="overline"
                 sx={{
-                  color: 'text.disabled',
+                  color: 'text.tertiary',
                   display: 'block',
                   letterSpacing: '0.12em',
                   mb: 0.5,

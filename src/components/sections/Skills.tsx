@@ -83,7 +83,7 @@ export const Skills = () => {
             fontFamily: 'overline.fontFamily',
             fontSize: '0.8125rem',
             letterSpacing: '0.08em',
-            color: 'text.disabled',
+            color: 'text.tertiary',
             '&.Mui-selected': { color: 'text.primary' },
           },
         }}
@@ -148,7 +148,7 @@ export const Skills = () => {
           mt: 4,
           gap: 2.5,
           flexWrap: 'wrap',
-          color: 'text.disabled',
+          color: 'text.tertiary',
           fontFamily: 'caption.fontFamily',
           fontSize: '0.75rem',
         }}
