@@ -3,7 +3,7 @@ import getconnectedImg from '@/assets/projects/getconnected.png'
 import hellenEnglishImg from '@/assets/projects/hellen-english.jpg'
 import phonebookImg from '@/assets/projects/phonebook.jpg'
 import walletImg from '@/assets/projects/wallet.jpg'
-import wirGehenLosImg from '@/assets/projects/wir-gehen-los.png'
+import wirGehenLosImg from '@/assets/projects/wir-gehen-los.webp'
 
 export type ProjectRole = 'solo' | 'team' | 'lead' | 'fullstack'
 
