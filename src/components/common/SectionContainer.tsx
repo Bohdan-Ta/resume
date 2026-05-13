@@ -15,7 +15,7 @@ export const SectionContainer = ({ id, children, sx, ...rest }: Props) => (
     sx={[
       {
         scrollMarginTop: { xs: `${SCROLL_MARGIN_TOP.xs}px`, md: `${SCROLL_MARGIN_TOP.md}px` },
-        py: { xs: 8, md: 16 },
+        py: { xs: 8, md: 10 },
         px: PAGE_GUTTER,
         maxWidth: PAGE_MAX_WIDTH,
         mx: 'auto',
