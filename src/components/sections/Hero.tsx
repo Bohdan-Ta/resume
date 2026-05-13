@@ -111,7 +111,14 @@ export const Hero = () => {
             <Box component="span" sx={{ fontWeight: 600, color: 'text.primary' }}>
               {t('currently.label')}
             </Box>
-            <Box component="span" sx={{ whiteSpace: 'normal' }}>
+            <Box
+              component="span"
+              sx={{
+                whiteSpace: { xs: 'normal', md: 'nowrap' },
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+              }}
+            >
               {t('currently.value')}
             </Box>
           </Box>
@@ -135,7 +142,7 @@ export const Hero = () => {
               borderRadius: 3,
               border: '1px solid',
               borderColor: 'primary.main',
-              transform: 'translate(12px, 12px)',
+              transform: { xs: 'translate(12px, 12px)', md: 'translate(16px, 16px)' },
               opacity: 0.5,
             }}
           />

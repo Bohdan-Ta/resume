@@ -104,7 +104,7 @@ export const Experience = () => {
                   {bullets.map((bullet) => (
                     <Box
                       component="li"
-                      key={bullet.slice(0, 32)}
+                      key={bullet}
                       sx={{
                         color: 'text.secondary',
                         lineHeight: 1.6,

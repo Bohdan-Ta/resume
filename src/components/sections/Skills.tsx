@@ -115,6 +115,8 @@ export const Skills = () => {
             <Chip
               key={skill.id}
               variant="outlined"
+              aria-label={`${skill.name} — ${t(`skills.levels.${skill.level}`)}`}
+              title={t(`skills.levels.${skill.level}`)}
               icon={
                 Icon ? (
                   <Box

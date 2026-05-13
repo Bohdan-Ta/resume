@@ -31,14 +31,14 @@
   },
   "currently": {
     "label": "Aktuell",
-    "value": "Beschäftige mich mit Spring Boot 4 + Kotlin-Coroutines · Lerne Deutsch"
+    "value": "Beschäftige mich mit Spring Boot 4 + Kotlin · Lerne Deutsch"
   },
   "about": {
     "eyebrow": "Über mich",
     "paragraphs": [
       "Full Stack Developer, der nach sechzehn Jahren in Management und im öffentlichen Dienst zur Softwareentwicklung gekommen ist. Die operative Disziplin aus der Leitung von Organisationen prägt meine Arbeit als Entwickler: klares Denken, Detailgenauigkeit und Verantwortung gegenüber den Nutzerinnen und Nutzern.",
       "Ich arbeite im gesamten Stack — Kotlin und Spring Boot im Backend, React und TypeScript im Frontend, Android mit Jetpack Compose auf dem Mobilgerät. Außerdem entwickle ich mit modernen AI-Werkzeugen: Claude- und OpenAI-APIs, MCP-Servern, RAG-Pipelines.",
-      "Lebenslang lernend — derzeit Schwerpunkte: Spring Boot 4, Kotlin-Coroutines und Deutsch."
+      "Lebenslang lernend — derzeit Schwerpunkte: Spring Boot 4, Kotlin und Deutsch."
     ],
     "highlights": {
       "languages": {

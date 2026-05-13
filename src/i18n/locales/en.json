@@ -31,14 +31,14 @@
   },
   "currently": {
     "label": "Currently",
-    "value": "Exploring Spring Boot 4 + Kotlin coroutines · Learning German"
+    "value": "Exploring Spring Boot 4 + Kotlin · Learning German"
   },
   "about": {
     "eyebrow": "About",
     "paragraphs": [
       "Full Stack Developer who came to engineering after sixteen years of management and government work. I bring the operational rigor of running organizations to the way I build software: clear thinking, attention to detail, and care for the people who use the result.",
       "I work across the stack — Kotlin and Spring Boot on the backend, React and TypeScript on the frontend, Android with Jetpack Compose on mobile. I also build with modern AI tooling: Claude and OpenAI APIs, MCP servers, RAG pipelines.",
-      "Continuous learner — currently focused on Spring Boot 4, Kotlin coroutines, and improving my German."
+      "Continuous learner — currently focused on Spring Boot 4, Kotlin, and improving my German."
     ],
     "highlights": {
       "languages": {

@@ -28,7 +28,7 @@ export const About = () => {
         <Stack spacing={3}>
           {paragraphs.map((p, idx) => (
             <Typography
-              key={p.slice(0, 32)}
+              key={p}
               sx={{
                 color: idx === 0 ? 'text.primary' : 'text.secondary',
                 fontSize: idx === 0 ? '1.125rem' : '1rem',
