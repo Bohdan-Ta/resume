@@ -13,37 +13,51 @@ const levelOrder: Record<SkillLevel, number> = {
   learning: 3,
 }
 
-const levelStyle = (level: SkillLevel) => {
-  switch (level) {
-    case 'daily':
-      return {
-        borderColor: 'primary.main',
-        color: 'text.primary',
-        '& .level-dot': { bgcolor: 'primary.main', opacity: 1 },
-      }
-    case 'strong':
-      return {
-        borderColor: 'divider',
-        color: 'text.primary',
-        '& .level-dot': { bgcolor: 'primary.main', opacity: 0.6 },
-      }
-    case 'working':
-      return {
-        borderColor: 'divider',
-        color: 'text.secondary',
-        '& .level-dot': { bgcolor: 'text.disabled', opacity: 0.8 },
-      }
-    case 'learning':
-      return {
-        borderColor: 'divider',
-        color: 'text.disabled',
-        borderStyle: 'dashed',
-        '& .level-dot': { bgcolor: 'text.disabled', opacity: 0.4 },
-      }
-    default: {
-      const _exhaustive: never = level
-      return _exhaustive
-    }
+const LEVELS = ['daily', 'strong', 'working', 'learning'] as const satisfies readonly SkillLevel[]
+
+type LevelVisual = {
+  dotColor: string
+  dotOpacity: number
+  textColor: string
+  borderColor: string
+  borderStyle?: 'solid' | 'dashed'
+}
+
+const LEVEL_VISUAL: Record<SkillLevel, LevelVisual> = {
+  daily: {
+    dotColor: 'primary.main',
+    dotOpacity: 1,
+    textColor: 'text.primary',
+    borderColor: 'primary.main',
+  },
+  strong: {
+    dotColor: 'primary.main',
+    dotOpacity: 0.6,
+    textColor: 'text.primary',
+    borderColor: 'divider',
+  },
+  working: {
+    dotColor: 'text.tertiary',
+    dotOpacity: 0.8,
+    textColor: 'text.secondary',
+    borderColor: 'divider',
+  },
+  learning: {
+    dotColor: 'text.tertiary',
+    dotOpacity: 0.4,
+    textColor: 'text.tertiary',
+    borderColor: 'divider',
+    borderStyle: 'dashed',
+  },
+}
+
+const chipSxForLevel = (level: SkillLevel) => {
+  const v = LEVEL_VISUAL[level]
+  return {
+    borderColor: v.borderColor,
+    color: v.textColor,
+    ...(v.borderStyle ? { borderStyle: v.borderStyle } : {}),
+    '& .level-dot': { bgcolor: v.dotColor, opacity: v.dotOpacity },
   }
 }
 
@@ -71,6 +85,7 @@ export const Skills = () => {
         variant="scrollable"
         scrollButtons="auto"
         allowScrollButtonsMobile
+        aria-label={t('skills.ariaTabs')}
         sx={{
           mb: 4,
           borderBottom: '1px solid',
@@ -118,6 +133,7 @@ export const Skills = () => {
                   <span>{skill.name}</span>
                   <Box
                     className="level-dot"
+                    aria-hidden
                     sx={{
                       width: 5,
                       height: 5,
@@ -135,7 +151,7 @@ export const Skills = () => {
                 transition: 'all 200ms',
                 '& .MuiChip-icon': { color: 'inherit', ml: 0.75 },
                 '&:hover': { borderColor: 'primary.main' },
-                ...levelStyle(skill.level),
+                ...chipSxForLevel(skill.level),
               }}
             />
           )
@@ -153,27 +169,24 @@ export const Skills = () => {
           fontSize: '0.75rem',
         }}
       >
-        {(['daily', 'strong', 'working', 'learning'] as SkillLevel[]).map((level) => (
-          <Stack key={level} direction="row" sx={{ alignItems: 'center', gap: 0.75 }}>
-            <Box
-              sx={{
-                width: 5,
-                height: 5,
-                borderRadius: '50%',
-                bgcolor: level === 'daily' || level === 'strong' ? 'primary.main' : 'text.disabled',
-                opacity:
-                  level === 'daily'
-                    ? 1
-                    : level === 'strong'
-                      ? 0.6
-                      : level === 'working'
-                        ? 0.8
-                        : 0.4,
-              }}
-            />
-            <span>{t(`skills.levels.${level}`)}</span>
-          </Stack>
-        ))}
+        {LEVELS.map((level) => {
+          const v = LEVEL_VISUAL[level]
+          return (
+            <Stack key={level} direction="row" sx={{ alignItems: 'center', gap: 0.75 }}>
+              <Box
+                aria-hidden
+                sx={{
+                  width: 5,
+                  height: 5,
+                  borderRadius: '50%',
+                  bgcolor: v.dotColor,
+                  opacity: v.dotOpacity,
+                }}
+              />
+              <span>{t(`skills.levels.${level}`)}</span>
+            </Stack>
+          )
+        })}
       </Stack>
     </SectionContainer>
   )

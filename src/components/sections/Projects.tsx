@@ -143,7 +143,7 @@ export const Projects = () => {
                     variant="outlined"
                     sx={{
                       height: 24,
-                      fontSize: '0.7rem',
+                      fontSize: '0.75rem',
                       fontFamily: 'caption.fontFamily',
                       color: 'text.secondary',
                       borderColor: 'divider',

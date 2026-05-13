@@ -58,6 +58,7 @@
   "skills": {
     "eyebrow": "Fähigkeiten",
     "intro": "Was ich im Alltag nutze. Nach Bereich gruppiert, nach Tiefe markiert.",
+    "ariaTabs": "Skill-Kategorien",
     "levels": {
       "daily": "Täglich im Einsatz",
       "strong": "Sicher",

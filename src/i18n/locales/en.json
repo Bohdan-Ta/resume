@@ -58,6 +58,7 @@
   "skills": {
     "eyebrow": "Skills",
     "intro": "Tech I use day to day. Grouped by domain, marked by depth.",
+    "ariaTabs": "Skill categories",
     "levels": {
       "daily": "Daily driver",
       "strong": "Strong",

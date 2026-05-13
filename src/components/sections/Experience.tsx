@@ -102,7 +102,7 @@ export const Experience = () => {
               <Typography sx={{ color: 'text.secondary', mb: 2 }}>{t(subtitleKey)}</Typography>
 
               {bullets.length > 0 && (
-                <Stack component="ul" spacing={0.75} sx={{ pl: 2.5, my: 0 }}>
+                <Box component="ul" sx={{ pl: 2.5, my: 0, '& > li + li': { mt: 0.75 } }}>
                   {bullets.map((bullet) => (
                     <Box
                       component="li"
@@ -116,7 +116,7 @@ export const Experience = () => {
                       {bullet}
                     </Box>
                   ))}
-                </Stack>
+                </Box>
               )}
             </Box>
           )
