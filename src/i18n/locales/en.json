@@ -1,0 +1,222 @@
+{
+  "themeToggle": {
+    "system": "System theme (click for light)",
+    "light": "Light theme (click for dark)",
+    "dark": "Dark theme (click for system)"
+  },
+  "languageSwitch": {
+    "label": "Change language",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "ariaPrimary": "Primary navigation",
+    "ariaMobile": "Mobile navigation",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Bohdan Tatarchuk",
+    "role": "Full Stack Developer",
+    "stack": "Kotlin · React · Spring Boot",
+    "cta": {
+      "contact": "Get in touch"
+    }
+  },
+  "currently": {
+    "label": "Currently",
+    "value": "Exploring Spring Boot 4 + Kotlin · Learning German"
+  },
+  "about": {
+    "eyebrow": "About",
+    "paragraphs": [
+      "Full Stack Developer who came to engineering after sixteen years of management and government work. I bring the operational rigor of running organizations to the way I build software: clear thinking, attention to detail, and care for the people who use the result.",
+      "I work across the stack — Kotlin and Spring Boot on the backend, React and TypeScript on the frontend, Android with Jetpack Compose on mobile. I also build with modern AI tooling: Claude and OpenAI APIs, MCP servers, RAG pipelines.",
+      "Continuous learner — currently focused on Spring Boot 4, Kotlin, and improving my German."
+    ],
+    "highlights": {
+      "languages": {
+        "label": "Languages",
+        "value": "Ukrainian (native) · English (B1) · German (B2)"
+      },
+      "approach": {
+        "label": "Approach",
+        "value": "Proactive · High organization · Attentive to details"
+      },
+      "outside": {
+        "label": "Outside code",
+        "value": "Team leadership · Mentoring · German language"
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "intro": "Tech I use day to day. Grouped by domain, marked by depth.",
+    "ariaTabs": "Skill categories",
+    "levels": {
+      "daily": "Daily driver",
+      "strong": "Strong",
+      "working": "Working knowledge",
+      "learning": "Learning"
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "ai": "AI & Integrations",
+      "tools": "Tools & DevOps",
+      "process": "Process & PM"
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "intro": "A selection of work — recent professional projects alongside early collaborations from GoIT.",
+    "roles": {
+      "solo": "Solo",
+      "team": "Team",
+      "lead": "Lead",
+      "fullstack": "Full Stack"
+    },
+    "links": {
+      "github": "GitHub",
+      "live": "Live demo"
+    },
+    "earlierHeading": "Earlier work",
+    "showEarlier": "Show earlier work ({{count}})",
+    "hideEarlier": "Hide earlier work",
+    "items": {
+      "mrija-manager": {
+        "title": "Mrija Manager",
+        "description": "Open-source events platform built under the Schleswig-Holstein Open Innovations program. Full-stack work on the Kotlin / Spring Boot backend, PostgreSQL data layer, and the React / TypeScript frontend, plus project management of scope, sprints and stakeholders via Jira and Confluence. Wir gehen los is a public deployment serving the Flensburg region."
+      },
+      "getconnected": {
+        "title": "#getconnected",
+        "description": "Website for the nordisch.digital business fair organised by WiREG. Built with Next.js and TypeScript — full-stack work on routing, content rendering and the visual identity."
+      },
+      "wallet": {
+        "title": "Wallet",
+        "description": "Personal finance tracker built with React and Node.js as a four-person team. Categorised transactions, budgeting, and a balance overview."
+      },
+      "phonebook": {
+        "title": "Phonebook",
+        "description": "Contacts app with auth, filtering, and persistent storage. React, Redux Toolkit, Formik, deployed on Netlify."
+      },
+      "filmoteka": {
+        "title": "Filmoteka",
+        "description": "Movie discovery and watchlist app powered by the TMDB API. Six-person team — responsible for state management and search."
+      },
+      "hellen-english": {
+        "title": "Hellen English",
+        "description": "Landing page for an English-learning service. Fully responsive, mobile-first markup with SCSS architecture."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "intro": "A non-linear path. Sixteen years of leadership before software — that lens stays with me."
+  },
+  "timeline": {
+    "kinds": {
+      "work": "Work",
+      "education": "Education",
+      "milestone": "Milestone"
+    },
+    "present": "Present",
+    "entries": {
+      "dev-current": {
+        "title": "Software Developer",
+        "subtitle": "Progeek GmbH",
+        "bullets": [
+          "Build production systems with Spring Boot + Kotlin on the backend and React on the frontend.",
+          "Design and ship REST APIs — schema, versioning, contract clarity for downstream teams.",
+          "Build lightweight services with Hono where Node.js / edge runtimes are the right fit.",
+          "Integrate LLM APIs (Claude, OpenAI), MCP servers, and RAG pipelines into product workflows."
+        ]
+      },
+      "mrija-pm": {
+        "title": "Project Manager — Mrija Manager",
+        "subtitle": "Landesprogramm Offene Innovationen Schleswig-Holstein",
+        "bullets": [
+          "Drove planning and delivery on the Mrija Manager events platform in parallel with my full-stack engineering work.",
+          "Owned scope, sprints, and stakeholder communication across product, design and engineering.",
+          "Day-to-day work in Jira (backlog, boards, releases) and Confluence (specs, decisions, retros)."
+        ]
+      },
+      "goit": {
+        "title": "Full Stack Developer training",
+        "subtitle": "GoIT Academy",
+        "bullets": [
+          "Completed Full Stack curriculum: HTML/CSS, JavaScript, React, Node.js, REST APIs.",
+          "Three team projects with role rotation — IC, reviewer, project coordinator.",
+          "Certificate of completion."
+        ]
+      },
+      "business": {
+        "title": "Founder",
+        "subtitle": "Private business",
+        "bullets": [
+          "Founded and ran a private business end to end.",
+          "Operations, finance, hiring, and team management."
+        ]
+      },
+      "public-service": {
+        "title": "Public service & leadership",
+        "subtitle": "Government / state enterprises",
+        "bullets": [
+          "Twelve years in central government bodies (ministries) and state-owned enterprises.",
+          "Leadership positions managing small and large teams across multiple functions.",
+          "Built operational discipline I now apply to engineering work."
+        ]
+      },
+      "university": {
+        "title": "Higher Education",
+        "subtitle": "Economics · Management · Law",
+        "bullets": ["Studied across economics, management, and law disciplines."]
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "dialogTitle": "Let's talk",
+    "openCta": "Write me",
+    "intro": "Have an idea, a question, or a role you'd like to discuss? Drop a message — I usually reply within a day.",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    },
+    "actions": {
+      "send": "Send message",
+      "sending": "Sending…",
+      "cancel": "Cancel",
+      "close": "Close"
+    },
+    "feedback": {
+      "success": "Message sent. I'll get back to you shortly.",
+      "error": "Something went wrong. Please try again or email me directly."
+    },
+    "errors": {
+      "nameMin": "Please enter at least 2 characters.",
+      "nameMax": "Please keep it under 60 characters.",
+      "email": "Please enter a valid email address.",
+      "messageMin": "Please enter at least 10 characters.",
+      "messageMax": "Please keep it under 2000 characters.",
+      "notConfigured": "Contact form is temporarily unavailable. Please email me directly."
+    },
+    "direct": {
+      "label": "Or write directly",
+      "elsewhere": "Elsewhere"
+    }
+  },
+  "footer": {
+    "eyebrow": "// Get in touch",
+    "copyright": "© {{year}} Bohdan Tatarchuk",
+    "builtWith": "Built with React, MUI, Vite."
+  }
+}

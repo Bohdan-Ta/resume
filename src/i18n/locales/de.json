@@ -1,0 +1,222 @@
+{
+  "themeToggle": {
+    "system": "Systemdesign (Klick für Hell)",
+    "light": "Helles Design (Klick für Dunkel)",
+    "dark": "Dunkles Design (Klick für System)"
+  },
+  "languageSwitch": {
+    "label": "Sprache wechseln",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "ariaPrimary": "Hauptnavigation",
+    "ariaMobile": "Mobile Navigation",
+    "openMenu": "Navigation öffnen",
+    "closeMenu": "Navigation schließen",
+    "experience": "Werdegang",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Bohdan Tatarchuk",
+    "role": "Full Stack Developer",
+    "stack": "Kotlin · React · Spring Boot",
+    "cta": {
+      "contact": "Kontakt aufnehmen"
+    }
+  },
+  "currently": {
+    "label": "Aktuell",
+    "value": "Beschäftige mich mit Spring Boot 4 + Kotlin · Lerne Deutsch"
+  },
+  "about": {
+    "eyebrow": "Über mich",
+    "paragraphs": [
+      "Full Stack Developer, der nach sechzehn Jahren in Management und im öffentlichen Dienst zur Softwareentwicklung gekommen ist. Die operative Disziplin aus der Leitung von Organisationen prägt meine Arbeit als Entwickler: klares Denken, Detailgenauigkeit und Verantwortung gegenüber den Nutzerinnen und Nutzern.",
+      "Ich arbeite im gesamten Stack — Kotlin und Spring Boot im Backend, React und TypeScript im Frontend, Android mit Jetpack Compose auf dem Mobilgerät. Außerdem entwickle ich mit modernen AI-Werkzeugen: Claude- und OpenAI-APIs, MCP-Servern, RAG-Pipelines.",
+      "Lebenslang lernend — derzeit Schwerpunkte: Spring Boot 4, Kotlin und Deutsch."
+    ],
+    "highlights": {
+      "languages": {
+        "label": "Sprachen",
+        "value": "Ukrainisch (Muttersprache) · Englisch (B1) · Deutsch (B2)"
+      },
+      "approach": {
+        "label": "Arbeitsweise",
+        "value": "Proaktiv · Strukturiert · Detailorientiert"
+      },
+      "outside": {
+        "label": "Neben dem Code",
+        "value": "Teamleitung · Mentoring · Deutsch lernen"
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Fähigkeiten",
+    "intro": "Was ich im Alltag nutze. Nach Bereich gruppiert, nach Tiefe markiert.",
+    "ariaTabs": "Skill-Kategorien",
+    "levels": {
+      "daily": "Täglich im Einsatz",
+      "strong": "Sicher",
+      "working": "Solides Grundwissen",
+      "learning": "Im Lernen"
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "ai": "AI & Integrationen",
+      "tools": "Tools & DevOps",
+      "process": "Prozess & PM"
+    }
+  },
+  "projects": {
+    "eyebrow": "Projekte",
+    "intro": "Eine Auswahl an Arbeiten — aktuelle berufliche Projekte neben frühen Teamprojekten aus der GoIT-Zeit.",
+    "roles": {
+      "solo": "Solo",
+      "team": "Team",
+      "lead": "Lead",
+      "fullstack": "Full Stack"
+    },
+    "links": {
+      "github": "GitHub",
+      "live": "Live-Demo"
+    },
+    "earlierHeading": "Frühere Arbeiten",
+    "showEarlier": "Frühere Arbeiten anzeigen ({{count}})",
+    "hideEarlier": "Frühere Arbeiten ausblenden",
+    "items": {
+      "mrija-manager": {
+        "title": "Mrija Manager",
+        "description": "Open-Source-Veranstaltungsplattform, entstanden im Rahmen des Landesprogramms Offene Innovationen Schleswig-Holstein. Full-Stack-Arbeit am Kotlin/Spring-Boot-Backend, der PostgreSQL-Datenschicht und am React/TypeScript-Frontend, zusätzlich Projektmanagement (Scope, Sprints, Stakeholder-Kommunikation über Jira und Confluence). Wir gehen los ist ein öffentliches Deployment für die Region Flensburg."
+      },
+      "getconnected": {
+        "title": "#getconnected",
+        "description": "Website für die Businessmesse nordisch.digital der WiREG. Umgesetzt mit Next.js und TypeScript — Full-Stack-Arbeit an Routing, Content-Rendering und visueller Identität."
+      },
+      "wallet": {
+        "title": "Wallet",
+        "description": "Persönlicher Finanztracker, entwickelt mit React und Node.js im Vierer-Team. Kategorisierte Transaktionen, Budgetplanung und Saldoübersicht."
+      },
+      "phonebook": {
+        "title": "Phonebook",
+        "description": "Kontakte-App mit Authentifizierung, Filterung und persistenter Speicherung. React, Redux Toolkit, Formik, deployed auf Netlify."
+      },
+      "filmoteka": {
+        "title": "Filmoteka",
+        "description": "Film-Discovery und Watchlist auf Basis der TMDB-API. Sechser-Team — verantwortlich für State-Management und Suche."
+      },
+      "hellen-english": {
+        "title": "Hellen English",
+        "description": "Landing Page für eine Englisch-Lernplattform. Mobile-First, voll responsives Markup mit SCSS-Architektur."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Werdegang",
+    "intro": "Kein gerader Weg. Sechzehn Jahre Führungsverantwortung vor der Softwareentwicklung — diese Perspektive bleibt."
+  },
+  "timeline": {
+    "kinds": {
+      "work": "Arbeit",
+      "education": "Ausbildung",
+      "milestone": "Meilenstein"
+    },
+    "present": "Heute",
+    "entries": {
+      "dev-current": {
+        "title": "Softwareentwickler",
+        "subtitle": "Progeek GmbH",
+        "bullets": [
+          "Entwicklung produktiver Systeme mit Spring Boot + Kotlin im Backend und React im Frontend.",
+          "Design und Umsetzung von REST-APIs — Schema, Versionierung, klare Contracts für anbindende Teams.",
+          "Leichte Services mit Hono, wenn Node.js bzw. Edge-Runtimes die passende Wahl sind.",
+          "Integration von LLM-APIs (Claude, OpenAI), MCP-Servern und RAG-Pipelines in produktive Workflows."
+        ]
+      },
+      "mrija-pm": {
+        "title": "Projektmanager — Mrija Manager",
+        "subtitle": "Landesprogramm Offene Innovationen Schleswig-Holstein",
+        "bullets": [
+          "Planung und Umsetzung der Veranstaltungsplattform Mrija Manager — parallel zur Full-Stack-Entwicklung.",
+          "Verantwortung für Scope, Sprints und Stakeholder-Kommunikation zwischen Produkt, Design und Entwicklung.",
+          "Tägliche Arbeit in Jira (Backlog, Boards, Releases) und Confluence (Specs, Entscheidungen, Retros)."
+        ]
+      },
+      "goit": {
+        "title": "Full-Stack-Developer-Ausbildung",
+        "subtitle": "GoIT Academy",
+        "bullets": [
+          "Absolvierte das Full-Stack-Curriculum: HTML/CSS, JavaScript, React, Node.js, REST-APIs.",
+          "Drei Teamprojekte mit wechselnden Rollen — IC, Reviewer, Projekt-Koordinator.",
+          "Abschlusszertifikat."
+        ]
+      },
+      "business": {
+        "title": "Gründer",
+        "subtitle": "Eigenes Unternehmen",
+        "bullets": [
+          "Gegründet und end-to-end geführt: eigenes privates Unternehmen.",
+          "Operativer Betrieb, Finanzen, Personal und Teamführung."
+        ]
+      },
+      "public-service": {
+        "title": "Öffentlicher Dienst & Führung",
+        "subtitle": "Ministerium / Staatsbetriebe",
+        "bullets": [
+          "Zwölf Jahre in zentralen Regierungsstellen (Ministerien) und Staatsbetrieben.",
+          "Führungspositionen — kleine und große Teams in mehreren Funktionen.",
+          "Operative Disziplin, die ich jetzt in die Entwicklungsarbeit einbringe."
+        ]
+      },
+      "university": {
+        "title": "Hochschulbildung",
+        "subtitle": "Wirtschaft · Management · Recht",
+        "bullets": ["Studium der Bereiche Wirtschaft, Management und Recht."]
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "dialogTitle": "Sprechen wir",
+    "openCta": "Schreib mir",
+    "intro": "Eine Idee, eine Frage oder eine Rolle, über die wir sprechen sollten? Schreiben Sie mir — ich antworte in der Regel innerhalb eines Tages.",
+    "fields": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht"
+    },
+    "actions": {
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet…",
+      "cancel": "Abbrechen",
+      "close": "Schließen"
+    },
+    "feedback": {
+      "success": "Nachricht gesendet. Ich melde mich in Kürze zurück.",
+      "error": "Etwas ist schiefgelaufen. Bitte erneut versuchen oder direkt eine E-Mail senden."
+    },
+    "errors": {
+      "nameMin": "Bitte mindestens 2 Zeichen eingeben.",
+      "nameMax": "Bitte unter 60 Zeichen halten.",
+      "email": "Bitte eine gültige E-Mail-Adresse eingeben.",
+      "messageMin": "Bitte mindestens 10 Zeichen eingeben.",
+      "messageMax": "Bitte unter 2000 Zeichen halten.",
+      "notConfigured": "Das Kontaktformular ist vorübergehend nicht verfügbar. Bitte direkt per E-Mail kontaktieren."
+    },
+    "direct": {
+      "label": "Oder direkt schreiben",
+      "elsewhere": "Anderswo"
+    }
+  },
+  "footer": {
+    "eyebrow": "// Get in touch",
+    "copyright": "© {{year}} Bohdan Tatarchuk",
+    "builtWith": "Gebaut mit React, MUI, Vite."
+  }
+}
