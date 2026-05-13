@@ -1,17 +1,24 @@
 import { useEffect, useState } from 'react'
 
+const DEFAULT_THRESHOLD = [0, 0.25, 0.5] as const
+
 type Options = {
-  ids: string[]
+  ids: readonly string[]
   rootMargin?: string
-  threshold?: number
+  threshold?: number | readonly number[]
 }
 
-export const useScrollSpy = ({ ids, rootMargin = '-40% 0px -55% 0px', threshold = 0 }: Options) => {
+export const useScrollSpy = ({
+  ids,
+  rootMargin = '-40% 0px -55% 0px',
+  threshold = DEFAULT_THRESHOLD,
+}: Options) => {
   const [activeId, setActiveId] = useState<string | null>(null)
+  const idsKey = ids.join(',')
 
   useEffect(() => {
-    if (typeof window === 'undefined') return
-    const elements = ids
+    const elements = idsKey
+      .split(',')
       .map((id) => document.getElementById(id))
       .filter((el): el is HTMLElement => el !== null)
     if (elements.length === 0) return
@@ -25,12 +32,12 @@ export const useScrollSpy = ({ ids, rootMargin = '-40% 0px -55% 0px', threshold 
         )
         setActiveId(closest.target.id)
       },
-      { rootMargin, threshold },
+      { rootMargin, threshold: threshold as number | number[] },
     )
 
     for (const el of elements) observer.observe(el)
     return () => observer.disconnect()
-  }, [ids, rootMargin, threshold])
+  }, [idsKey, rootMargin, threshold])
 
   return activeId
 }

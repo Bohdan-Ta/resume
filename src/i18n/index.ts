@@ -27,7 +27,7 @@ i18n
   })
 
 const applyHtmlLang = (lng: string) => {
-  document.documentElement.lang = lng.split('-')[0] ?? 'en'
+  document.documentElement.lang = lng.split('-')[0] || 'en'
 }
 
 applyHtmlLang(i18n.language)

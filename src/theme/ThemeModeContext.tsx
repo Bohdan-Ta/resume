@@ -40,10 +40,7 @@ export const ThemeModeProvider = ({ children }: { children: ReactNode }) => {
     setMode((prev) => (prev === 'system' ? 'light' : prev === 'light' ? 'dark' : 'system'))
   }, [])
 
-  const value = useMemo(
-    () => ({ mode, resolvedMode, cycleMode }),
-    [mode, resolvedMode, cycleMode],
-  )
+  const value = useMemo(() => ({ mode, resolvedMode, cycleMode }), [mode, resolvedMode, cycleMode])
 
   return <ThemeModeContext.Provider value={value}>{children}</ThemeModeContext.Provider>
 }
