@@ -180,11 +180,58 @@ const CompactProjectCard = ({ project }: CardProps) => {
         border: '1px solid',
         borderColor: 'divider',
         borderRadius: 2,
+        overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'row',
         transition: 'border-color 240ms, transform 240ms',
-        '&:hover': { borderColor: 'primary.main', transform: 'translateY(-1px)' },
+        '&:hover': {
+          borderColor: 'primary.main',
+          transform: 'translateY(-1px)',
+          '& .project-image': { filter: 'saturate(1.05)' },
+        },
       }}
     >
-      <CardContent sx={{ p: 2.5, display: 'flex', flexDirection: 'column', gap: 1.25 }}>
+      {project.image && (
+        <Box
+          sx={{
+            position: 'relative',
+            flexShrink: 0,
+            width: 88,
+            alignSelf: 'stretch',
+            overflow: 'hidden',
+            bgcolor: 'background.default',
+          }}
+        >
+          <Box
+            component="img"
+            src={project.image}
+            alt={t(`${project.i18nKey}.title`)}
+            loading="lazy"
+            className="project-image"
+            sx={{
+              position: 'absolute',
+              inset: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              filter: 'saturate(0.8)',
+              transition: 'filter 320ms',
+            }}
+          />
+        </Box>
+      )}
+      <CardContent
+        sx={{
+          p: 2,
+          pl: project.image ? 2 : 2.5,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 0.75,
+          flex: 1,
+          minWidth: 0,
+          '&:last-child': { pb: 2 },
+        }}
+      >
         <Stack direction="row" sx={{ justifyContent: 'space-between', alignItems: 'baseline' }}>
           <Typography
             variant="overline"
@@ -194,10 +241,17 @@ const CompactProjectCard = ({ project }: CardProps) => {
           </Typography>
           <ProjectLinks project={project} />
         </Stack>
-        <Typography sx={{ fontFamily: 'h4.fontFamily', fontSize: '1.125rem', fontWeight: 400 }}>
+        <Typography
+          sx={{
+            fontFamily: 'h4.fontFamily',
+            fontSize: '1rem',
+            fontWeight: 400,
+            lineHeight: 1.2,
+          }}
+        >
           {t(`${project.i18nKey}.title`)}
         </Typography>
-        <TechChips tech={project.tech} limit={4} />
+        <TechChips tech={project.tech} limit={3} />
       </CardContent>
     </Card>
   )
