@@ -12,7 +12,7 @@ export type TimelineEntry = {
 export const TIMELINE: TimelineEntry[] = [
   {
     id: 'dev-current',
-    from: '2022',
+    from: '2023',
     to: 'present',
     kind: 'work',
     i18nKey: 'timeline.entries.dev-current',

@@ -56,9 +56,11 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     i18nKey: 'skills.categories.backend',
     skills: [
       { id: 'kotlin', name: 'Kotlin', level: 'daily', icon: SiKotlin },
-      { id: 'spring-boot', name: 'Spring Boot', level: 'strong', icon: SiSpringboot },
+      { id: 'spring-boot', name: 'Spring Boot', level: 'daily', icon: SiSpringboot },
+      { id: 'hono', name: 'Hono', level: 'strong' },
       { id: 'node', name: 'Node.js', level: 'strong', icon: SiNodedotjs },
       { id: 'rest-api', name: 'REST APIs', level: 'daily', icon: TbApi },
+      { id: 'api-architecture', name: 'API Architecture', level: 'strong', icon: TbApi },
       { id: 'postgresql', name: 'PostgreSQL', level: 'strong', icon: SiPostgresql },
       { id: 'mongodb', name: 'MongoDB', level: 'working', icon: SiMongodb },
     ],

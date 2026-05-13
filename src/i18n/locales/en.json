@@ -113,12 +113,13 @@
     "present": "Present",
     "entries": {
       "dev-current": {
-        "title": "Full Stack Developer",
-        "subtitle": "Independent · Remote",
+        "title": "Software Developer",
+        "subtitle": "Progeek GmbH",
         "bullets": [
-          "Build web and mobile applications with Kotlin, Spring Boot, React, and Android.",
-          "Integrate LLM APIs (Claude, OpenAI), MCP servers, and RAG pipelines into production workflows.",
-          "Continuous learning across new Spring Boot releases, Kotlin coroutines, and AI tooling."
+          "Build production systems with Spring Boot + Kotlin on the backend and React on the frontend.",
+          "Design and ship REST APIs — schema, versioning, contract clarity for downstream teams.",
+          "Build lightweight services with Hono where Node.js / edge runtimes are the right fit.",
+          "Integrate LLM APIs (Claude, OpenAI), MCP servers, and RAG pipelines into product workflows."
         ]
       },
       "goit": {
