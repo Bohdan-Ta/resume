@@ -1,9 +1,11 @@
 import filmotekaImg from '@/assets/projects/filmoteka.jpg'
+import getconnectedImg from '@/assets/projects/getconnected.png'
 import hellenEnglishImg from '@/assets/projects/hellen-english.jpg'
 import phonebookImg from '@/assets/projects/phonebook.jpg'
 import walletImg from '@/assets/projects/wallet.jpg'
+import wirGehenLosImg from '@/assets/projects/wir-gehen-los.png'
 
-export type ProjectRole = 'solo' | 'team' | 'lead'
+export type ProjectRole = 'solo' | 'team' | 'lead' | 'fullstack'
 
 export type Project = {
   id: string
@@ -20,6 +22,32 @@ export type Project = {
 }
 
 export const PROJECTS: Project[] = [
+  {
+    id: 'wir-gehen-los',
+    image: wirGehenLosImg,
+    role: 'fullstack',
+    year: '2025',
+    i18nKey: 'projects.items.wir-gehen-los',
+    tech: ['Kotlin', 'Spring Boot', 'PostgreSQL', 'React', 'TypeScript', 'Vite', 'Docker'],
+    links: {
+      github:
+        'https://gitlab.opencode.de/sh/digitalhub-sh/landesprogramm-offene-innovationen/mrija-manager',
+      live: 'https://wirgehenlos.de',
+    },
+    featured: true,
+  },
+  {
+    id: 'getconnected',
+    image: getconnectedImg,
+    role: 'fullstack',
+    year: '2025',
+    i18nKey: 'projects.items.getconnected',
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind'],
+    links: {
+      live: 'https://www.getconnected.digital',
+    },
+    featured: true,
+  },
   {
     id: 'wallet',
     image: walletImg,

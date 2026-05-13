@@ -75,17 +75,26 @@
   },
   "projects": {
     "eyebrow": "Projects",
-    "intro": "A selection of work — early collaborations from GoIT, with newer projects to follow.",
+    "intro": "A selection of work — recent professional projects alongside early collaborations from GoIT.",
     "roles": {
       "solo": "Solo",
       "team": "Team",
-      "lead": "Lead"
+      "lead": "Lead",
+      "fullstack": "Full Stack"
     },
     "links": {
       "github": "GitHub",
       "live": "Live demo"
     },
     "items": {
+      "wir-gehen-los": {
+        "title": "Wir gehen los",
+        "description": "Open-source events platform for the Flensburg / Schleswig-Holstein region, built under the state's Open Innovations program. Full-stack work on the Kotlin / Spring Boot backend, PostgreSQL data layer, and the React / TypeScript frontend."
+      },
+      "getconnected": {
+        "title": "#getconnected",
+        "description": "Website for the nordisch.digital business fair organised by WiREG. Built with Next.js and TypeScript — full-stack work on routing, content rendering and the visual identity."
+      },
       "wallet": {
         "title": "Wallet",
         "description": "Personal finance tracker built with React and Node.js as a four-person team. Categorised transactions, budgeting, and a balance overview."

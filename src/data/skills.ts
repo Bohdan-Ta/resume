@@ -8,6 +8,7 @@ import {
   SiJavascript,
   SiJetpackcompose,
   SiKotlin,
+  SiKubernetes,
   SiMongodb,
   SiMui,
   SiNextdotjs,
@@ -97,6 +98,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { id: 'git', name: 'Git', level: 'daily', icon: SiGit },
       { id: 'docker', name: 'Docker', level: 'strong', icon: SiDocker },
+      { id: 'kubernetes', name: 'Kubernetes', level: 'working', icon: SiKubernetes },
       { id: 'intellij', name: 'IntelliJ IDEA', level: 'daily', icon: SiIntellijidea },
       { id: 'android-studio', name: 'Android Studio', level: 'strong', icon: SiAndroid },
     ],
