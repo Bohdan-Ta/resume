@@ -1,9 +1,9 @@
 import filmotekaImg from '@/assets/projects/filmoteka.jpg'
 import getconnectedImg from '@/assets/projects/getconnected.png'
 import hellenEnglishImg from '@/assets/projects/hellen-english.jpg'
+import mrijaManagerImg from '@/assets/projects/mrija-manager.webp'
 import phonebookImg from '@/assets/projects/phonebook.jpg'
 import walletImg from '@/assets/projects/wallet.jpg'
-import wirGehenLosImg from '@/assets/projects/wir-gehen-los.webp'
 
 export type ProjectRole = 'solo' | 'team' | 'lead' | 'fullstack'
 
@@ -23,11 +23,11 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    id: 'wir-gehen-los',
-    image: wirGehenLosImg,
+    id: 'mrija-manager',
+    image: mrijaManagerImg,
     role: 'fullstack',
     year: '2025',
-    i18nKey: 'projects.items.wir-gehen-los',
+    i18nKey: 'projects.items.mrija-manager',
     tech: ['Kotlin', 'Spring Boot', 'PostgreSQL', 'React', 'TypeScript', 'Vite', 'Docker'],
     links: {
       github:

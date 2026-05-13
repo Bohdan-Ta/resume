@@ -2,11 +2,13 @@ import type { IconType } from 'react-icons'
 import {
   SiAndroid,
   SiAnthropic,
+  SiConfluence,
   SiDocker,
   SiGit,
   SiIntellijidea,
   SiJavascript,
   SiJetpackcompose,
+  SiJira,
   SiKotlin,
   SiKubernetes,
   SiMongodb,
@@ -21,7 +23,7 @@ import {
   SiTypescript,
   SiVite,
 } from 'react-icons/si'
-import { TbApi, TbDatabaseSearch, TbRobot, TbVectorTriangle } from 'react-icons/tb'
+import { TbApi, TbClipboardList, TbDatabaseSearch, TbRobot, TbVectorTriangle } from 'react-icons/tb'
 
 export type SkillLevel = 'daily' | 'strong' | 'working' | 'learning'
 
@@ -33,7 +35,7 @@ export type Skill = {
 }
 
 export type SkillCategory = {
-  id: 'frontend' | 'backend' | 'mobile' | 'ai' | 'tools'
+  id: 'frontend' | 'backend' | 'mobile' | 'ai' | 'tools' | 'process'
   i18nKey: string
   skills: Skill[]
 }
@@ -101,6 +103,20 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { id: 'kubernetes', name: 'Kubernetes', level: 'working', icon: SiKubernetes },
       { id: 'intellij', name: 'IntelliJ IDEA', level: 'daily', icon: SiIntellijidea },
       { id: 'android-studio', name: 'Android Studio', level: 'strong', icon: SiAndroid },
+    ],
+  },
+  {
+    id: 'process',
+    i18nKey: 'skills.categories.process',
+    skills: [
+      {
+        id: 'project-management',
+        name: 'Project Management',
+        level: 'strong',
+        icon: TbClipboardList,
+      },
+      { id: 'jira', name: 'Jira', level: 'strong', icon: SiJira },
+      { id: 'confluence', name: 'Confluence', level: 'strong', icon: SiConfluence },
     ],
   },
 ]

@@ -70,7 +70,8 @@
       "backend": "Backend",
       "mobile": "Mobile",
       "ai": "AI & Integrationen",
-      "tools": "Tools & DevOps"
+      "tools": "Tools & DevOps",
+      "process": "Prozess & PM"
     }
   },
   "projects": {
@@ -90,9 +91,9 @@
     "showEarlier": "Frühere Arbeiten anzeigen ({{count}})",
     "hideEarlier": "Frühere Arbeiten ausblenden",
     "items": {
-      "wir-gehen-los": {
-        "title": "Wir gehen los",
-        "description": "Open-Source-Veranstaltungsplattform für die Region Flensburg / Schleswig-Holstein, entstanden im Rahmen des Landesprogramms Offene Innovationen. Full-Stack-Arbeit am Kotlin/Spring-Boot-Backend, der PostgreSQL-Datenschicht und am React/TypeScript-Frontend."
+      "mrija-manager": {
+        "title": "Mrija Manager",
+        "description": "Open-Source-Veranstaltungsplattform, entstanden im Rahmen des Landesprogramms Offene Innovationen Schleswig-Holstein. Full-Stack-Arbeit am Kotlin/Spring-Boot-Backend, der PostgreSQL-Datenschicht und am React/TypeScript-Frontend, zusätzlich Projektmanagement (Scope, Sprints, Stakeholder-Kommunikation über Jira und Confluence). Wir gehen los ist ein öffentliches Deployment für die Region Flensburg."
       },
       "getconnected": {
         "title": "#getconnected",
@@ -136,6 +137,15 @@
           "Design und Umsetzung von REST-APIs — Schema, Versionierung, klare Contracts für anbindende Teams.",
           "Leichte Services mit Hono, wenn Node.js bzw. Edge-Runtimes die passende Wahl sind.",
           "Integration von LLM-APIs (Claude, OpenAI), MCP-Servern und RAG-Pipelines in produktive Workflows."
+        ]
+      },
+      "mrija-pm": {
+        "title": "Projektmanager — Mrija Manager",
+        "subtitle": "Landesprogramm Offene Innovationen Schleswig-Holstein",
+        "bullets": [
+          "Planung und Umsetzung der Veranstaltungsplattform Mrija Manager — parallel zur Full-Stack-Entwicklung.",
+          "Verantwortung für Scope, Sprints und Stakeholder-Kommunikation zwischen Produkt, Design und Entwicklung.",
+          "Tägliche Arbeit in Jira (Backlog, Boards, Releases) und Confluence (Specs, Entscheidungen, Retros)."
         ]
       },
       "goit": {

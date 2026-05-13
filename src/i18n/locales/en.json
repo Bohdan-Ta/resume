@@ -70,7 +70,8 @@
       "backend": "Backend",
       "mobile": "Mobile",
       "ai": "AI & Integrations",
-      "tools": "Tools & DevOps"
+      "tools": "Tools & DevOps",
+      "process": "Process & PM"
     }
   },
   "projects": {
@@ -90,9 +91,9 @@
     "showEarlier": "Show earlier work ({{count}})",
     "hideEarlier": "Hide earlier work",
     "items": {
-      "wir-gehen-los": {
-        "title": "Wir gehen los",
-        "description": "Open-source events platform for the Flensburg / Schleswig-Holstein region, built under the state's Open Innovations program. Full-stack work on the Kotlin / Spring Boot backend, PostgreSQL data layer, and the React / TypeScript frontend."
+      "mrija-manager": {
+        "title": "Mrija Manager",
+        "description": "Open-source events platform built under the Schleswig-Holstein Open Innovations program. Full-stack work on the Kotlin / Spring Boot backend, PostgreSQL data layer, and the React / TypeScript frontend, plus project management of scope, sprints and stakeholders via Jira and Confluence. Wir gehen los is a public deployment serving the Flensburg region."
       },
       "getconnected": {
         "title": "#getconnected",
@@ -136,6 +137,15 @@
           "Design and ship REST APIs — schema, versioning, contract clarity for downstream teams.",
           "Build lightweight services with Hono where Node.js / edge runtimes are the right fit.",
           "Integrate LLM APIs (Claude, OpenAI), MCP servers, and RAG pipelines into product workflows."
+        ]
+      },
+      "mrija-pm": {
+        "title": "Project Manager — Mrija Manager",
+        "subtitle": "Landesprogramm Offene Innovationen Schleswig-Holstein",
+        "bullets": [
+          "Drove planning and delivery on the Mrija Manager events platform in parallel with my full-stack engineering work.",
+          "Owned scope, sprints, and stakeholder communication across product, design and engineering.",
+          "Day-to-day work in Jira (backlog, boards, releases) and Confluence (specs, decisions, retros)."
         ]
       },
       "goit": {

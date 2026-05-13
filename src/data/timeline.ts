@@ -18,6 +18,13 @@ export const TIMELINE: TimelineEntry[] = [
     i18nKey: 'timeline.entries.dev-current',
   },
   {
+    id: 'mrija-pm',
+    from: '2025',
+    to: 'present',
+    kind: 'work',
+    i18nKey: 'timeline.entries.mrija-pm',
+  },
+  {
     id: 'goit',
     from: '2021',
     to: '2022',
