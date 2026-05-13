@@ -21,7 +21,6 @@
     "name": "Bohdan Tatarchuk",
     "role": "Full Stack Developer",
     "stack": "Kotlin · React · Spring Boot",
-    "location": "Flensburg, Deutschland — offen für Remote- und Hybrid-Stellen",
     "cta": {
       "contact": "Kontakt aufnehmen",
       "cv": "Lebenslauf herunterladen"
@@ -29,6 +28,9 @@
   },
   "currently": {
     "label": "Aktuell",
-    "value": "Beschäftige mich mit Spring Boot 4 + Kotlin-Coroutines · Lerne Deutsch · Offen für neue Möglichkeiten"
+    "value": "Beschäftige mich mit Spring Boot 4 + Kotlin-Coroutines · Lerne Deutsch"
+  },
+  "footer": {
+    "eyebrow": "// Get in touch"
   }
 }
