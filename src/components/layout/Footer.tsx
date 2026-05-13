@@ -93,7 +93,7 @@ export const Footer = () => {
           }}
         >
           <span>© {year} Bohdan Tatarchuk</span>
-          <span>Built with React, MUI, Vite. Hosted on Netlify.</span>
+          <span>Built with React, MUI, Vite.</span>
         </Stack>
       </Box>
     </Box>

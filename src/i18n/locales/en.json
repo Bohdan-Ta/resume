@@ -30,6 +30,130 @@
     "label": "Currently",
     "value": "Exploring Spring Boot 4 + Kotlin coroutines · Learning German"
   },
+  "about": {
+    "eyebrow": "About",
+    "paragraphs": [
+      "Full Stack Developer who came to engineering after sixteen years of management and government work. I bring the operational rigor of running organizations to the way I build software: clear thinking, attention to detail, and care for the people who use the result.",
+      "I work across the stack — Kotlin and Spring Boot on the backend, React and TypeScript on the frontend, Android with Jetpack Compose on mobile. I also build with modern AI tooling: Claude and OpenAI APIs, MCP servers, RAG pipelines.",
+      "Continuous learner — currently focused on Spring Boot 4, Kotlin coroutines, and improving my German."
+    ],
+    "highlights": {
+      "languages": {
+        "label": "Languages",
+        "value": "Ukrainian (native) · English (C1) · German (B1, learning)"
+      },
+      "approach": {
+        "label": "Approach",
+        "value": "Proactive · High organization · Attentive to details"
+      },
+      "outside": {
+        "label": "Outside code",
+        "value": "Team leadership · Mentoring · German language"
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "intro": "Tech I use day to day. Grouped by domain, marked by depth.",
+    "levels": {
+      "daily": "Daily driver",
+      "strong": "Strong",
+      "working": "Working knowledge",
+      "learning": "Learning"
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "ai": "AI & Integrations",
+      "tools": "Tools & DevOps"
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "intro": "A selection of work — early collaborations from GoIT, with newer projects to follow.",
+    "roles": {
+      "solo": "Solo",
+      "team": "Team",
+      "lead": "Lead"
+    },
+    "links": {
+      "github": "GitHub",
+      "live": "Live demo"
+    },
+    "items": {
+      "wallet": {
+        "title": "Wallet",
+        "description": "Personal finance tracker built with React and Node.js as a four-person team. Categorised transactions, budgeting, and a balance overview."
+      },
+      "phonebook": {
+        "title": "Phonebook",
+        "description": "Contacts app with auth, filtering, and persistent storage. React, Redux Toolkit, Formik, deployed on Netlify."
+      },
+      "filmoteka": {
+        "title": "Filmoteka",
+        "description": "Movie discovery and watchlist app powered by the TMDB API. Six-person team — responsible for state management and search."
+      },
+      "hellen-english": {
+        "title": "Hellen English",
+        "description": "Landing page for an English-learning service. Fully responsive, mobile-first markup with SCSS architecture."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "intro": "A non-linear path. Sixteen years of leadership before software — that lens stays with me."
+  },
+  "timeline": {
+    "kinds": {
+      "work": "Work",
+      "education": "Education",
+      "milestone": "Milestone"
+    },
+    "present": "Present",
+    "entries": {
+      "dev-current": {
+        "title": "Full Stack Developer",
+        "subtitle": "Independent · Remote",
+        "bullets": [
+          "Build web and mobile applications with Kotlin, Spring Boot, React, and Android.",
+          "Integrate LLM APIs (Claude, OpenAI), MCP servers, and RAG pipelines into production workflows.",
+          "Continuous learning across new Spring Boot releases, Kotlin coroutines, and AI tooling."
+        ]
+      },
+      "goit": {
+        "title": "Full Stack Developer training",
+        "subtitle": "GoIT Academy",
+        "bullets": [
+          "Completed Full Stack curriculum: HTML/CSS, JavaScript, React, Node.js, REST APIs.",
+          "Three team projects with role rotation — IC, reviewer, project coordinator.",
+          "Certificate of completion."
+        ]
+      },
+      "business": {
+        "title": "Founder",
+        "subtitle": "Private business",
+        "bullets": [
+          "Founded and ran a private business end to end.",
+          "Operations, finance, hiring, and team management."
+        ]
+      },
+      "public-service": {
+        "title": "Public service & leadership",
+        "subtitle": "Government / state enterprises",
+        "bullets": [
+          "Twelve years in central government bodies (ministries) and state-owned enterprises.",
+          "Leadership positions managing small and large teams across multiple functions.",
+          "Built operational discipline I now apply to engineering work."
+        ]
+      },
+      "university": {
+        "title": "Higher Education",
+        "subtitle": "Economics · Management · Law",
+        "bullets": ["Studied across economics, management, and law disciplines."]
+      }
+    }
+  },
   "footer": {
     "eyebrow": "// Get in touch"
   }

@@ -30,6 +30,130 @@
     "label": "Aktuell",
     "value": "Beschäftige mich mit Spring Boot 4 + Kotlin-Coroutines · Lerne Deutsch"
   },
+  "about": {
+    "eyebrow": "Über mich",
+    "paragraphs": [
+      "Full Stack Developer, der nach sechzehn Jahren in Management und im öffentlichen Dienst zur Softwareentwicklung gekommen ist. Die operative Disziplin aus der Leitung von Organisationen prägt meine Arbeit als Entwickler: klares Denken, Detailgenauigkeit und Verantwortung gegenüber den Nutzerinnen und Nutzern.",
+      "Ich arbeite im gesamten Stack — Kotlin und Spring Boot im Backend, React und TypeScript im Frontend, Android mit Jetpack Compose auf dem Mobilgerät. Außerdem entwickle ich mit modernen AI-Werkzeugen: Claude- und OpenAI-APIs, MCP-Servern, RAG-Pipelines.",
+      "Lebenslang lernend — derzeit Schwerpunkte: Spring Boot 4, Kotlin-Coroutines und Deutsch."
+    ],
+    "highlights": {
+      "languages": {
+        "label": "Sprachen",
+        "value": "Ukrainisch (Muttersprache) · Englisch (C1) · Deutsch (B1, im Lernen)"
+      },
+      "approach": {
+        "label": "Arbeitsweise",
+        "value": "Proaktiv · Strukturiert · Detailorientiert"
+      },
+      "outside": {
+        "label": "Neben dem Code",
+        "value": "Teamleitung · Mentoring · Deutsch lernen"
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Fähigkeiten",
+    "intro": "Was ich im Alltag nutze. Nach Bereich gruppiert, nach Tiefe markiert.",
+    "levels": {
+      "daily": "Täglich im Einsatz",
+      "strong": "Sicher",
+      "working": "Solides Grundwissen",
+      "learning": "Im Lernen"
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "ai": "AI & Integrationen",
+      "tools": "Tools & DevOps"
+    }
+  },
+  "projects": {
+    "eyebrow": "Projekte",
+    "intro": "Eine Auswahl an Arbeiten — frühe Teamprojekte aus der GoIT-Zeit, neuere Projekte folgen.",
+    "roles": {
+      "solo": "Solo",
+      "team": "Team",
+      "lead": "Lead"
+    },
+    "links": {
+      "github": "GitHub",
+      "live": "Live-Demo"
+    },
+    "items": {
+      "wallet": {
+        "title": "Wallet",
+        "description": "Persönlicher Finanztracker, entwickelt mit React und Node.js im Vierer-Team. Kategorisierte Transaktionen, Budgetplanung und Saldoübersicht."
+      },
+      "phonebook": {
+        "title": "Phonebook",
+        "description": "Kontakte-App mit Authentifizierung, Filterung und persistenter Speicherung. React, Redux Toolkit, Formik, deployed auf Netlify."
+      },
+      "filmoteka": {
+        "title": "Filmoteka",
+        "description": "Film-Discovery und Watchlist auf Basis der TMDB-API. Sechser-Team — verantwortlich für State-Management und Suche."
+      },
+      "hellen-english": {
+        "title": "Hellen English",
+        "description": "Landing Page für eine Englisch-Lernplattform. Mobile-First, voll responsives Markup mit SCSS-Architektur."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Werdegang",
+    "intro": "Kein gerader Weg. Sechzehn Jahre Führungsverantwortung vor der Softwareentwicklung — diese Perspektive bleibt."
+  },
+  "timeline": {
+    "kinds": {
+      "work": "Arbeit",
+      "education": "Ausbildung",
+      "milestone": "Meilenstein"
+    },
+    "present": "Heute",
+    "entries": {
+      "dev-current": {
+        "title": "Full Stack Developer",
+        "subtitle": "Selbstständig · Remote",
+        "bullets": [
+          "Entwicklung von Web- und Mobil-Anwendungen mit Kotlin, Spring Boot, React und Android.",
+          "Integration von LLM-APIs (Claude, OpenAI), MCP-Servern und RAG-Pipelines in produktive Workflows.",
+          "Kontinuierliches Lernen rund um neue Spring-Boot-Releases, Kotlin-Coroutines und AI-Tooling."
+        ]
+      },
+      "goit": {
+        "title": "Full-Stack-Developer-Ausbildung",
+        "subtitle": "GoIT Academy",
+        "bullets": [
+          "Absolvierte das Full-Stack-Curriculum: HTML/CSS, JavaScript, React, Node.js, REST-APIs.",
+          "Drei Teamprojekte mit wechselnden Rollen — IC, Reviewer, Projekt-Koordinator.",
+          "Abschlusszertifikat."
+        ]
+      },
+      "business": {
+        "title": "Gründer",
+        "subtitle": "Eigenes Unternehmen",
+        "bullets": [
+          "Gegründet und end-to-end geführt: eigenes privates Unternehmen.",
+          "Operativer Betrieb, Finanzen, Personal und Teamführung."
+        ]
+      },
+      "public-service": {
+        "title": "Öffentlicher Dienst & Führung",
+        "subtitle": "Ministerium / Staatsbetriebe",
+        "bullets": [
+          "Zwölf Jahre in zentralen Regierungsstellen (Ministerien) und Staatsbetrieben.",
+          "Führungspositionen — kleine und große Teams in mehreren Funktionen.",
+          "Operative Disziplin, die ich jetzt in die Entwicklungsarbeit einbringe."
+        ]
+      },
+      "university": {
+        "title": "Hochschulbildung",
+        "subtitle": "Wirtschaft · Management · Recht",
+        "bullets": ["Studium der Bereiche Wirtschaft, Management und Recht."]
+      }
+    }
+  },
   "footer": {
     "eyebrow": "// Get in touch"
   }
