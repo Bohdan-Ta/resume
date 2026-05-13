@@ -11,7 +11,7 @@ export const Hero = () => {
   const { t } = useTranslation()
   const { openContact } = useContactDialog()
   return (
-    <SectionContainer id="hero" sx={{ pt: { xs: 4, md: 8 }, pb: { xs: 8, md: 14 } }}>
+    <SectionContainer id="hero" sx={{ pt: { xs: 4, md: 6 }, pb: { xs: 8, md: 10 } }}>
       <Box
         sx={{
           display: 'grid',
