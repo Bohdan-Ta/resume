@@ -37,8 +37,8 @@
     "eyebrow": "Über mich",
     "paragraphs": [
       "Full Stack Developer, der nach sechzehn Jahren in Management und im öffentlichen Dienst zur Softwareentwicklung gekommen ist. Die operative Disziplin aus der Leitung von Organisationen prägt meine Arbeit als Entwickler: klares Denken, Detailgenauigkeit und Verantwortung gegenüber den Nutzerinnen und Nutzern.",
-      "Ich arbeite im gesamten Stack — Kotlin und Spring Boot im Backend, React und TypeScript im Frontend, Android mit Jetpack Compose auf dem Mobilgerät. Außerdem entwickle ich mit modernen AI-Werkzeugen: Claude- und OpenAI-APIs, MCP-Servern, RAG-Pipelines.",
-      "Lebenslang lernend — derzeit Schwerpunkte: Spring Boot 4, Kotlin und Deutsch."
+      "Ich arbeite im gesamten Stack - Kotlin und Spring Boot im Backend, React und TypeScript im Frontend, Android mit Jetpack Compose auf dem Mobilgerät. Außerdem entwickle ich mit modernen AI-Werkzeugen: Claude- und OpenAI-APIs, MCP-Servern, RAG-Pipelines.",
+      "Lebenslang lernend - derzeit Schwerpunkte: Spring Boot 4, Kotlin und Deutsch."
     ],
     "highlights": {
       "languages": {
@@ -76,7 +76,7 @@
   },
   "projects": {
     "eyebrow": "Projekte",
-    "intro": "Eine Auswahl an Arbeiten — aktuelle berufliche Projekte neben frühen Teamprojekten aus der GoIT-Zeit.",
+    "intro": "Eine Auswahl an Arbeiten - aktuelle berufliche Projekte neben frühen Teamprojekten aus der GoIT-Zeit.",
     "roles": {
       "solo": "Solo",
       "team": "Team",
@@ -97,7 +97,7 @@
       },
       "getconnected": {
         "title": "#getconnected",
-        "description": "Website für die Businessmesse nordisch.digital der WiREG. Umgesetzt mit Next.js und TypeScript — Full-Stack-Arbeit an Routing, Content-Rendering und visueller Identität."
+        "description": "Website für die Businessmesse nordisch.digital der WiREG. Umgesetzt mit Next.js und TypeScript - Full-Stack-Arbeit an Routing, Content-Rendering und visueller Identität."
       },
       "wallet": {
         "title": "Wallet",
@@ -109,7 +109,7 @@
       },
       "filmoteka": {
         "title": "Filmoteka",
-        "description": "Film-Discovery und Watchlist auf Basis der TMDB-API. Sechser-Team — verantwortlich für State-Management und Suche."
+        "description": "Film-Discovery und Watchlist auf Basis der TMDB-API. Sechser-Team - verantwortlich für State-Management und Suche."
       },
       "hellen-english": {
         "title": "Hellen English",
@@ -119,7 +119,7 @@
   },
   "experience": {
     "eyebrow": "Werdegang",
-    "intro": "Kein gerader Weg. Sechzehn Jahre Führungsverantwortung vor der Softwareentwicklung — diese Perspektive bleibt."
+    "intro": "Kein gerader Weg. Sechzehn Jahre Führungsverantwortung vor der Softwareentwicklung - diese Perspektive bleibt."
   },
   "timeline": {
     "kinds": {
@@ -134,16 +134,16 @@
         "subtitle": "Progeek GmbH",
         "bullets": [
           "Entwicklung produktiver Systeme mit Spring Boot + Kotlin im Backend und React im Frontend.",
-          "Design und Umsetzung von REST-APIs — Schema, Versionierung, klare Contracts für anbindende Teams.",
+          "Design und Umsetzung von REST-APIs - Schema, Versionierung, klare Contracts für anbindende Teams.",
           "Leichte Services mit Hono, wenn Node.js bzw. Edge-Runtimes die passende Wahl sind.",
           "Integration von LLM-APIs (Claude, OpenAI), MCP-Servern und RAG-Pipelines in produktive Workflows."
         ]
       },
       "mrija-pm": {
-        "title": "Projektmanager — Mrija Manager",
+        "title": "Projektmanager - Mrija Manager",
         "subtitle": "Landesprogramm Offene Innovationen Schleswig-Holstein",
         "bullets": [
-          "Planung und Umsetzung der Veranstaltungsplattform Mrija Manager — parallel zur Full-Stack-Entwicklung.",
+          "Planung und Umsetzung der Veranstaltungsplattform Mrija Manager - parallel zur Full-Stack-Entwicklung.",
           "Verantwortung für Scope, Sprints und Stakeholder-Kommunikation zwischen Produkt, Design und Entwicklung.",
           "Tägliche Arbeit in Jira (Backlog, Boards, Releases) und Confluence (Specs, Entscheidungen, Retros)."
         ]
@@ -153,7 +153,7 @@
         "subtitle": "GoIT Academy",
         "bullets": [
           "Absolvierte das Full-Stack-Curriculum: HTML/CSS, JavaScript, React, Node.js, REST-APIs.",
-          "Drei Teamprojekte mit wechselnden Rollen — IC, Reviewer, Projekt-Koordinator.",
+          "Drei Teamprojekte mit wechselnden Rollen - IC, Reviewer, Projekt-Koordinator.",
           "Abschlusszertifikat."
         ]
       },
@@ -170,7 +170,7 @@
         "subtitle": "Ministerium / Staatsbetriebe",
         "bullets": [
           "Zwölf Jahre in zentralen Regierungsstellen (Ministerien) und Staatsbetrieben.",
-          "Führungspositionen — kleine und große Teams in mehreren Funktionen.",
+          "Führungspositionen - kleine und große Teams in mehreren Funktionen.",
           "Operative Disziplin, die ich jetzt in die Entwicklungsarbeit einbringe."
         ]
       },
@@ -185,7 +185,7 @@
     "eyebrow": "Kontakt",
     "dialogTitle": "Sprechen wir",
     "openCta": "Schreib mir",
-    "intro": "Eine Idee, eine Frage oder eine Rolle, über die wir sprechen sollten? Schreiben Sie mir — ich antworte in der Regel innerhalb eines Tages.",
+    "intro": "Eine Idee, eine Frage oder eine Rolle, über die wir sprechen sollten? Schreiben Sie mir - ich antworte in der Regel innerhalb eines Tages.",
     "fields": {
       "name": "Name",
       "email": "E-Mail",

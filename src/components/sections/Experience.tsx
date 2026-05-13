@@ -78,7 +78,7 @@ export const Experience = () => {
                     minWidth: 140,
                   }}
                 >
-                  {entry.from} — {dateLabel}
+                  {entry.from} - {dateLabel}
                 </Typography>
                 <Typography
                   variant="caption"
