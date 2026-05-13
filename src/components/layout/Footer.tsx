@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { FaGithub, FaLinkedinIn, FaTelegramPlane } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { useContactDialog } from '@/components/contact/ContactDialogContext'
+import { PAGE_GUTTER, PAGE_MAX_WIDTH } from '@/theme/layout'
 
 const SOCIALS = [
   { href: 'mailto:btatarchuk@progeek.de', label: 'Email', icon: HiOutlineMail },
@@ -27,11 +28,11 @@ export const Footer = () => {
         borderTop: '1px solid',
         borderColor: 'divider',
         py: { xs: 4, md: 6 },
-        px: { xs: 2, sm: 4, md: 8, lg: 12 },
+        px: PAGE_GUTTER,
         mt: { xs: 8, md: 12 },
       }}
     >
-      <Box sx={{ maxWidth: 1280, mx: 'auto', width: '100%' }}>
+      <Box sx={{ maxWidth: PAGE_MAX_WIDTH, mx: 'auto', width: '100%' }}>
         <Stack
           direction={{ xs: 'column', sm: 'row' }}
           sx={{ justifyContent: 'space-between', alignItems: { sm: 'center' }, gap: 3 }}

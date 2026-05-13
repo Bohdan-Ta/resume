@@ -12,6 +12,12 @@ import {
   typography,
 } from './tokens'
 
+declare module '@mui/material/styles' {
+  interface TypeText {
+    tertiary: string
+  }
+}
+
 const sharedOptions: ThemeOptions = {
   shape: { borderRadius: radius.md },
   typography: {
@@ -92,7 +98,12 @@ const buildTheme = (mode: PaletteMode) => {
         contrastText: mode === 'light' ? '#FFFFFF' : neutralsDark.canvas,
       },
       background: { default: n.canvas, paper: n.surface },
-      text: { primary: n.textPrimary, secondary: n.textSecondary, disabled: n.textMuted },
+      text: {
+        primary: n.textPrimary,
+        secondary: n.textSecondary,
+        tertiary: n.textTertiary,
+        disabled: n.textMuted,
+      },
       divider: n.borderSubtle,
       success: { main: sem.success },
       warning: { main: sem.warning },

@@ -1,6 +1,7 @@
 import type { BoxProps } from '@mui/material'
 import { Box } from '@mui/material'
 import type { ReactNode } from 'react'
+import { PAGE_GUTTER, PAGE_MAX_WIDTH, SCROLL_MARGIN_TOP } from '@/theme/layout'
 
 type Props = Omit<BoxProps, 'component'> & {
   id: string
@@ -13,10 +14,10 @@ export const SectionContainer = ({ id, children, sx, ...rest }: Props) => (
     id={id}
     sx={[
       {
-        scrollMarginTop: 80,
+        scrollMarginTop: { xs: `${SCROLL_MARGIN_TOP.xs}px`, md: `${SCROLL_MARGIN_TOP.md}px` },
         py: { xs: 8, md: 16 },
-        px: { xs: 2, sm: 4, md: 8, lg: 12 },
-        maxWidth: 1280,
+        px: PAGE_GUTTER,
+        maxWidth: PAGE_MAX_WIDTH,
         mx: 'auto',
         width: '100%',
       },

@@ -19,6 +19,7 @@ export const neutralsLight = {
   borderStrong: '#C9C2B5',
   textPrimary: '#1A1714',
   textSecondary: '#5A544A',
+  textTertiary: '#6B6459',
   textMuted: '#8A8377',
 } as const
 
@@ -30,6 +31,7 @@ export const neutralsDark = {
   borderStrong: '#3F3A33',
   textPrimary: '#F2EEE6',
   textSecondary: '#A8A095',
+  textTertiary: '#8A8377',
   textMuted: '#6B6459',
 } as const
 

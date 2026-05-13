@@ -17,6 +17,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useScrolled } from '@/hooks/useScrolled'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
+import { HEADER_HEIGHT, PAGE_GUTTER, PAGE_MAX_WIDTH } from '@/theme/layout'
 import { LanguageSwitch } from '../common/LanguageSwitch'
 import { ThemeToggle } from '../common/ThemeToggle'
 import { Logo } from './Logo'
@@ -122,11 +123,11 @@ export const Header = () => {
         <Toolbar
           disableGutters
           sx={{
-            maxWidth: 1280,
+            maxWidth: PAGE_MAX_WIDTH,
             mx: 'auto',
             width: '100%',
-            px: { xs: 2, sm: 4, md: 8, lg: 12 },
-            minHeight: { xs: 64, md: 72 },
+            px: PAGE_GUTTER,
+            minHeight: { xs: HEADER_HEIGHT.xs, md: HEADER_HEIGHT.md },
             justifyContent: 'space-between',
             gap: 2,
           }}
