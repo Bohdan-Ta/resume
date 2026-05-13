@@ -11,38 +11,11 @@ import {
   typography,
 } from './tokens'
 
-const shadows = {
-  light: [
-    'none',
-    '0 1px 2px rgba(20,17,12,0.04), 0 0 0 1px rgba(20,17,12,0.04)',
-    '0 4px 12px rgba(20,17,12,0.06), 0 0 0 1px rgba(20,17,12,0.05)',
-    '0 12px 32px rgba(20,17,12,0.10), 0 0 0 1px rgba(20,17,12,0.06)',
-  ],
-  dark: [
-    'none',
-    '0 1px 2px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.04)',
-    '0 4px 12px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05)',
-    '0 12px 32px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.06)',
-  ],
-}
-
-const shadowsArray = (mode: 'light' | 'dark') => {
-  const base = shadows[mode]
-  const arr: string[] = ['none']
-  for (let i = 1; i <= 24; i++) {
-    arr.push(base[Math.min(i, base.length - 1)] ?? 'none')
-  }
-  return arr as unknown as string[]
-}
-
 export const theme = createTheme({
-  cssVariables: {
-    colorSchemeSelector: 'data',
-  },
+  cssVariables: true,
   colorSchemes: {
     light: {
       palette: {
-        mode: 'light',
         primary: {
           light: accent[300],
           main: accent[400],
@@ -66,7 +39,6 @@ export const theme = createTheme({
     },
     dark: {
       palette: {
-        mode: 'dark',
         primary: {
           light: accent[300],
           main: accent[400],
@@ -105,13 +77,9 @@ export const theme = createTheme({
     caption: { ...typography.monoSm, fontFamily: fontFamily.mono },
     overline: { ...typography.monoSm, fontFamily: fontFamily.mono, textTransform: 'uppercase' },
   },
-  shadows: shadowsArray('light') as never,
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        ':root': {
-          colorScheme: 'light dark',
-        },
         '*, *::before, *::after': {
           boxSizing: 'border-box',
         },
