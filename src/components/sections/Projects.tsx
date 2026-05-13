@@ -128,7 +128,7 @@ const FullProjectCard = ({ project }: CardProps) => {
             width: '100%',
             aspectRatio: '16 / 10',
             overflow: 'hidden',
-            bgcolor: 'background.default',
+            bgcolor: 'background.paper',
           }}
         >
           <Box
@@ -203,7 +203,7 @@ const CompactProjectCard = ({ project }: CardProps) => {
             width: 88,
             alignSelf: 'stretch',
             overflow: 'hidden',
-            bgcolor: 'background.default',
+            bgcolor: 'background.paper',
           }}
         >
           <Box
