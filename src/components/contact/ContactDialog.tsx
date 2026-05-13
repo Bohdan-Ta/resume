@@ -227,7 +227,6 @@ export const ContactDialog = ({ open, onClose }: Props) => {
                 <SendOutlined fontSize="small" />
               )
             }
-            sx={{ bgcolor: 'primary.main', color: 'primary.contrastText' }}
           >
             {isSubmitting ? t('contact.actions.sending') : t('contact.actions.send')}
           </Button>

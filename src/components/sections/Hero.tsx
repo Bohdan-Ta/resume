@@ -1,5 +1,6 @@
 import { ArrowForward } from '@mui/icons-material'
 import { Box, Button, Stack, Typography } from '@mui/material'
+import { alpha } from '@mui/material/styles'
 import { useTranslation } from 'react-i18next'
 import portraitLarge from '@/assets/portrait-bohdan.webp'
 import portraitSmall from '@/assets/portrait-bohdan-sm.webp'
@@ -64,12 +65,7 @@ export const Hero = () => {
           </Typography>
 
           <Stack direction="row" sx={{ gap: 1.5, flexWrap: 'wrap', mb: 4 }}>
-            <Button
-              variant="contained"
-              endIcon={<ArrowForward />}
-              onClick={openContact}
-              sx={{ bgcolor: 'primary.main', color: 'primary.contrastText' }}
-            >
+            <Button variant="contained" endIcon={<ArrowForward />} onClick={openContact}>
               {t('hero.cta.contact')}
             </Button>
           </Stack>
@@ -99,12 +95,16 @@ export const Hero = () => {
                 height: 6,
                 borderRadius: '50%',
                 bgcolor: 'primary.main',
-                boxShadow: (theme) => `0 0 0 4px ${theme.palette.primary.main}25`,
+                boxShadow: (theme) => `0 0 0 4px ${alpha(theme.palette.primary.main, 0.15)}`,
                 flexShrink: 0,
                 animation: 'hero-pulse 2.4s ease-in-out infinite',
                 '@keyframes hero-pulse': {
-                  '0%, 100%': { boxShadow: (theme) => `0 0 0 0 ${theme.palette.primary.main}55` },
-                  '50%': { boxShadow: (theme) => `0 0 0 6px ${theme.palette.primary.main}00` },
+                  '0%, 100%': {
+                    boxShadow: (theme) => `0 0 0 0 ${alpha(theme.palette.primary.main, 0.33)}`,
+                  },
+                  '50%': {
+                    boxShadow: (theme) => `0 0 0 6px ${alpha(theme.palette.primary.main, 0)}`,
+                  },
                 },
               }}
             />
@@ -128,6 +128,7 @@ export const Hero = () => {
           }}
         >
           <Box
+            aria-hidden
             sx={{
               position: 'absolute',
               inset: 0,

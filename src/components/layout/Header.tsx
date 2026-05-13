@@ -14,6 +14,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material'
+import { alpha } from '@mui/material/styles'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useScrolled } from '@/hooks/useScrolled'
@@ -85,7 +86,7 @@ const NavLink = ({
       '&:focus-visible': {
         outline: 'none',
         color: 'text.primary',
-        boxShadow: (theme) => `0 0 0 3px ${theme.palette.primary.main}40`,
+        boxShadow: (theme) => `0 0 0 3px ${alpha(theme.palette.primary.main, 0.25)}`,
         borderRadius: 1,
       },
     }}

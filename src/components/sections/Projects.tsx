@@ -127,7 +127,7 @@ export const Projects = () => {
                 </Stack>
               </Stack>
 
-              <Typography variant="h4" sx={{ fontSize: '1.5rem', fontWeight: 400 }}>
+              <Typography variant="h4" sx={{ fontWeight: 400 }}>
                 {t(`${project.i18nKey}.title`)}
               </Typography>
               <Typography sx={{ color: 'text.secondary', flex: 1, lineHeight: 1.6 }}>

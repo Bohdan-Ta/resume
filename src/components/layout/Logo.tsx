@@ -1,4 +1,5 @@
 import { Box } from '@mui/material'
+import { alpha } from '@mui/material/styles'
 
 type Props = {
   onClick?: () => void
@@ -30,7 +31,7 @@ export const Logo = ({ onClick }: Props) => {
         '&:hover, &:focus-visible': { color: 'primary.main' },
         '&:focus-visible': {
           outline: 'none',
-          boxShadow: (theme) => `0 0 0 3px ${theme.palette.primary.main}40`,
+          boxShadow: (theme) => `0 0 0 3px ${alpha(theme.palette.primary.main, 0.25)}`,
           borderRadius: 1,
         },
       }}

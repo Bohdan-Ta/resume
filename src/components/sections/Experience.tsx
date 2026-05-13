@@ -1,4 +1,5 @@
 import { Box, Stack, Typography } from '@mui/material'
+import { alpha } from '@mui/material/styles'
 import { useTranslation } from 'react-i18next'
 import { SectionContainer } from '@/components/common/SectionContainer'
 import { SectionEyebrow } from '@/components/common/SectionEyebrow'
@@ -58,7 +59,7 @@ export const Experience = () => {
                   borderColor: entry.to === 'present' ? 'primary.main' : 'text.tertiary',
                   boxShadow:
                     entry.to === 'present'
-                      ? (theme) => `0 0 0 4px ${theme.palette.primary.main}25`
+                      ? (theme) => `0 0 0 4px ${alpha(theme.palette.primary.main, 0.15)}`
                       : 'none',
                 }}
               />
@@ -93,10 +94,7 @@ export const Experience = () => {
                 </Typography>
               </Stack>
 
-              <Typography
-                variant="h4"
-                sx={{ fontSize: { xs: '1.375rem', md: '1.5rem' }, mb: 0.25 }}
-              >
+              <Typography variant="h4" sx={{ mb: 0.25 }}>
                 {t(titleKey)}
               </Typography>
               <Typography sx={{ color: 'text.secondary', mb: 2 }}>{t(subtitleKey)}</Typography>
