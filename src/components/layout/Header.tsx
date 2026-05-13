@@ -1,3 +1,4 @@
+import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
 import {
   AppBar,
@@ -189,6 +190,13 @@ export const Header = () => {
           sx={{ justifyContent: 'space-between', alignItems: 'center', mb: 3 }}
         >
           <Logo onClick={() => setDrawerOpen(false)} />
+          <IconButton
+            aria-label={t('nav.closeMenu')}
+            onClick={() => setDrawerOpen(false)}
+            sx={{ color: 'text.primary' }}
+          >
+            <CloseIcon />
+          </IconButton>
         </Stack>
         <Divider />
         <List component="nav" aria-label={t('nav.ariaMobile')} sx={{ mt: 2 }}>

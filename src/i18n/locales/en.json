@@ -192,6 +192,8 @@
     }
   },
   "footer": {
-    "eyebrow": "// Get in touch"
+    "eyebrow": "// Get in touch",
+    "copyright": "© {{year}} Bohdan Tatarchuk",
+    "builtWith": "Built with React, MUI, Vite."
   }
 }

@@ -42,7 +42,7 @@ export const Footer = () => {
               variant="overline"
               sx={{ color: 'text.tertiary', display: 'block', letterSpacing: '0.12em' }}
             >
-              {t('footer.eyebrow', { defaultValue: '// Get in touch' })}
+              {t('footer.eyebrow')}
             </Typography>
             <Stack
               direction={{ xs: 'column', sm: 'row' }}
@@ -114,8 +114,8 @@ export const Footer = () => {
             color: 'text.tertiary',
           }}
         >
-          <span>© {year} Bohdan Tatarchuk</span>
-          <span>Built with React, MUI, Vite.</span>
+          <span>{t('footer.copyright', { year })}</span>
+          <span>{t('footer.builtWith')}</span>
         </Stack>
       </Box>
     </Box>
