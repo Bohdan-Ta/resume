@@ -1,7 +1,9 @@
-import { Box, Divider, IconButton, Stack, Typography } from '@mui/material'
+import { ArrowForward } from '@mui/icons-material'
+import { Box, Button, Divider, IconButton, Stack, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { FaGithub, FaLinkedinIn, FaTelegramPlane } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
+import { useContactDialog } from '@/components/contact/ContactDialogContext'
 
 const SOCIALS = [
   { href: 'mailto:btatarchuk@progeek.de', label: 'Email', icon: HiOutlineMail },
@@ -16,6 +18,7 @@ const SOCIALS = [
 
 export const Footer = () => {
   const { t } = useTranslation()
+  const { openContact } = useContactDialog()
   const year = new Date().getFullYear()
   return (
     <Box
@@ -56,6 +59,19 @@ export const Footer = () => {
             >
               btatarchuk@progeek.de
             </Typography>
+            <Button
+              variant="outlined"
+              endIcon={<ArrowForward />}
+              onClick={openContact}
+              sx={{
+                mt: 2,
+                borderColor: 'divider',
+                color: 'text.primary',
+                '&:hover': { borderColor: 'primary.main', bgcolor: 'transparent' },
+              }}
+            >
+              {t('contact.openCta')}
+            </Button>
           </Box>
 
           <Stack direction="row" sx={{ gap: 0.5 }}>

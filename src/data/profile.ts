@@ -13,7 +13,6 @@ export const profile = {
   name: 'Bohdan Tatarchuk',
   initials: 'BT',
   email: 'btatarchuk@progeek.de',
-  cvHref: '/cv-bohdan-tatarchuk.pdf',
 } as const
 
 export const SOCIAL_LINKS: SocialLink[] = [

@@ -1,13 +1,14 @@
-import { ArrowForward, FileDownloadOutlined } from '@mui/icons-material'
+import { ArrowForward } from '@mui/icons-material'
 import { Box, Button, Stack, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import portraitLarge from '@/assets/portrait-bohdan.webp'
 import portraitSmall from '@/assets/portrait-bohdan-sm.webp'
 import { SectionContainer } from '@/components/common/SectionContainer'
-import { profile } from '@/data/profile'
+import { useContactDialog } from '@/components/contact/ContactDialogContext'
 
 export const Hero = () => {
   const { t } = useTranslation()
+  const { openContact } = useContactDialog()
   return (
     <SectionContainer id="hero" sx={{ pt: { xs: 4, md: 8 }, pb: { xs: 8, md: 14 } }}>
       <Box
@@ -66,25 +67,10 @@ export const Hero = () => {
             <Button
               variant="contained"
               endIcon={<ArrowForward />}
-              component="a"
-              href={`mailto:${profile.email}`}
+              onClick={openContact}
               sx={{ bgcolor: 'primary.main', color: 'primary.contrastText' }}
             >
               {t('hero.cta.contact')}
-            </Button>
-            <Button
-              variant="outlined"
-              component="a"
-              href={profile.cvHref}
-              download
-              startIcon={<FileDownloadOutlined />}
-              sx={{
-                borderColor: 'divider',
-                color: 'text.primary',
-                '&:hover': { borderColor: 'text.primary', bgcolor: 'transparent' },
-              }}
-            >
-              {t('hero.cta.cv')}
             </Button>
           </Stack>
 

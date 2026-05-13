@@ -22,8 +22,7 @@
     "role": "Full Stack Developer",
     "stack": "Kotlin · React · Spring Boot",
     "cta": {
-      "contact": "Get in touch",
-      "cv": "Download CV"
+      "contact": "Get in touch"
     }
   },
   "currently": {
@@ -153,6 +152,39 @@
         "subtitle": "Economics · Management · Law",
         "bullets": ["Studied across economics, management, and law disciplines."]
       }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "dialogTitle": "Let's talk",
+    "openCta": "Write me",
+    "intro": "Have an idea, a question, or a role you'd like to discuss? Drop a message — I usually reply within a day.",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    },
+    "actions": {
+      "send": "Send message",
+      "sending": "Sending…",
+      "cancel": "Cancel",
+      "close": "Close"
+    },
+    "feedback": {
+      "success": "Message sent. I'll get back to you shortly.",
+      "error": "Something went wrong. Please try again or email me directly."
+    },
+    "errors": {
+      "nameMin": "Please enter at least 2 characters.",
+      "nameMax": "Please keep it under 60 characters.",
+      "email": "Please enter a valid email address.",
+      "messageMin": "Please enter at least 10 characters.",
+      "messageMax": "Please keep it under 2000 characters.",
+      "notConfigured": "Contact form is temporarily unavailable. Please email me directly."
+    },
+    "direct": {
+      "label": "Or write directly",
+      "elsewhere": "Elsewhere"
     }
   },
   "footer": {

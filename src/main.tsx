@@ -6,6 +6,7 @@ import '@fontsource-variable/inter-tight'
 import '@fontsource-variable/jetbrains-mono'
 import './i18n'
 import { App } from './App'
+import { ContactDialogProvider } from './components/contact/ContactDialogContext'
 import { darkTheme, lightTheme } from './theme'
 import { ThemeModeProvider, useThemeMode } from './theme/ThemeModeContext'
 
@@ -14,7 +15,9 @@ const ThemedApp = () => {
   return (
     <ThemeProvider theme={resolvedMode === 'dark' ? darkTheme : lightTheme}>
       <CssBaseline />
-      <App />
+      <ContactDialogProvider>
+        <App />
+      </ContactDialogProvider>
     </ThemeProvider>
   )
 }

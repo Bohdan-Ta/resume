@@ -22,8 +22,7 @@
     "role": "Full Stack Developer",
     "stack": "Kotlin · React · Spring Boot",
     "cta": {
-      "contact": "Kontakt aufnehmen",
-      "cv": "Lebenslauf herunterladen"
+      "contact": "Kontakt aufnehmen"
     }
   },
   "currently": {
@@ -153,6 +152,39 @@
         "subtitle": "Wirtschaft · Management · Recht",
         "bullets": ["Studium der Bereiche Wirtschaft, Management und Recht."]
       }
+    }
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "dialogTitle": "Sprechen wir",
+    "openCta": "Schreib mir",
+    "intro": "Eine Idee, eine Frage oder eine Rolle, über die wir sprechen sollten? Schreiben Sie mir — ich antworte in der Regel innerhalb eines Tages.",
+    "fields": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht"
+    },
+    "actions": {
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet…",
+      "cancel": "Abbrechen",
+      "close": "Schließen"
+    },
+    "feedback": {
+      "success": "Nachricht gesendet. Ich melde mich in Kürze zurück.",
+      "error": "Etwas ist schiefgelaufen. Bitte erneut versuchen oder direkt eine E-Mail senden."
+    },
+    "errors": {
+      "nameMin": "Bitte mindestens 2 Zeichen eingeben.",
+      "nameMax": "Bitte unter 60 Zeichen halten.",
+      "email": "Bitte eine gültige E-Mail-Adresse eingeben.",
+      "messageMin": "Bitte mindestens 10 Zeichen eingeben.",
+      "messageMax": "Bitte unter 2000 Zeichen halten.",
+      "notConfigured": "Das Kontaktformular ist vorübergehend nicht verfügbar. Bitte direkt per E-Mail kontaktieren."
+    },
+    "direct": {
+      "label": "Oder direkt schreiben",
+      "elsewhere": "Anderswo"
     }
   },
   "footer": {
