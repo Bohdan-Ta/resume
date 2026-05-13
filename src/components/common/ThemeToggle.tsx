@@ -2,6 +2,7 @@ import ContrastIcon from '@mui/icons-material/Contrast'
 import DarkModeIcon from '@mui/icons-material/DarkModeOutlined'
 import LightModeIcon from '@mui/icons-material/LightModeOutlined'
 import { IconButton, Tooltip } from '@mui/material'
+import { useTranslation } from 'react-i18next'
 import type { ThemeMode } from '@/theme/ThemeModeContext'
 import { useThemeMode } from '@/theme/ThemeModeContext'
 
@@ -11,21 +12,17 @@ const iconFor: Record<ThemeMode, typeof ContrastIcon> = {
   dark: DarkModeIcon,
 }
 
-const labelFor: Record<ThemeMode, string> = {
-  system: 'System theme (click for light)',
-  light: 'Light theme (click for dark)',
-  dark: 'Dark theme (click for system)',
-}
-
 export const ThemeToggle = () => {
   const { mode, cycleMode } = useThemeMode()
+  const { t } = useTranslation()
   const Icon = iconFor[mode]
+  const label = t(`themeToggle.${mode}`)
 
   return (
-    <Tooltip title={labelFor[mode]}>
+    <Tooltip title={label}>
       <IconButton
         onClick={cycleMode}
-        aria-label={labelFor[mode]}
+        aria-label={label}
         size="medium"
         sx={{
           color: 'text.primary',

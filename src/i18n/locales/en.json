@@ -1,0 +1,34 @@
+{
+  "themeToggle": {
+    "system": "System theme (click for light)",
+    "light": "Light theme (click for dark)",
+    "dark": "Dark theme (click for system)"
+  },
+  "languageSwitch": {
+    "label": "Change language",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Bohdan Tatarchuk",
+    "role": "Full Stack Developer",
+    "stack": "Kotlin · React · Spring Boot",
+    "location": "Flensburg, Germany — open to remote and hybrid roles",
+    "cta": {
+      "contact": "Get in touch",
+      "cv": "Download CV"
+    }
+  },
+  "currently": {
+    "label": "Currently",
+    "value": "Exploring Spring Boot 4 + Kotlin coroutines · Learning German · Open to opportunities"
+  }
+}

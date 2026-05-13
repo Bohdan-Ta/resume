@@ -1,0 +1,34 @@
+{
+  "themeToggle": {
+    "system": "Systemdesign (Klick für Hell)",
+    "light": "Helles Design (Klick für Dunkel)",
+    "dark": "Dunkles Design (Klick für System)"
+  },
+  "languageSwitch": {
+    "label": "Sprache wechseln",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "experience": "Werdegang",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Bohdan Tatarchuk",
+    "role": "Full Stack Developer",
+    "stack": "Kotlin · React · Spring Boot",
+    "location": "Flensburg, Deutschland — offen für Remote- und Hybrid-Stellen",
+    "cta": {
+      "contact": "Kontakt aufnehmen",
+      "cv": "Lebenslauf herunterladen"
+    }
+  },
+  "currently": {
+    "label": "Aktuell",
+    "value": "Beschäftige mich mit Spring Boot 4 + Kotlin-Coroutines · Lerne Deutsch · Offen für neue Möglichkeiten"
+  }
+}
