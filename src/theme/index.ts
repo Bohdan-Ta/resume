@@ -1,3 +1,4 @@
+import type { PaletteMode, ThemeOptions } from '@mui/material/styles'
 import { createTheme } from '@mui/material/styles'
 import {
   accent,
@@ -11,56 +12,7 @@ import {
   typography,
 } from './tokens'
 
-export const theme = createTheme({
-  cssVariables: true,
-  colorSchemes: {
-    light: {
-      palette: {
-        primary: {
-          light: accent[300],
-          main: accent[400],
-          dark: accent[600],
-          contrastText: '#FFFFFF',
-        },
-        background: {
-          default: neutralsLight.canvas,
-          paper: neutralsLight.surface,
-        },
-        text: {
-          primary: neutralsLight.textPrimary,
-          secondary: neutralsLight.textSecondary,
-          disabled: neutralsLight.textMuted,
-        },
-        divider: neutralsLight.borderSubtle,
-        success: { main: semantic.light.success },
-        warning: { main: semantic.light.warning },
-        error: { main: semantic.light.error },
-      },
-    },
-    dark: {
-      palette: {
-        primary: {
-          light: accent[300],
-          main: accent[400],
-          dark: accent[600],
-          contrastText: '#15130F',
-        },
-        background: {
-          default: neutralsDark.canvas,
-          paper: neutralsDark.surface,
-        },
-        text: {
-          primary: neutralsDark.textPrimary,
-          secondary: neutralsDark.textSecondary,
-          disabled: neutralsDark.textMuted,
-        },
-        divider: neutralsDark.borderSubtle,
-        success: { main: semantic.dark.success },
-        warning: { main: semantic.dark.warning },
-        error: { main: semantic.dark.error },
-      },
-    },
-  },
+const sharedOptions: ThemeOptions = {
   shape: { borderRadius: radius.md },
   typography: {
     fontFamily: fontFamily.body,
@@ -80,22 +32,16 @@ export const theme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        '*, *::before, *::after': {
-          boxSizing: 'border-box',
-        },
+        '*, *::before, *::after': { boxSizing: 'border-box' },
         html: {
           WebkitFontSmoothing: 'antialiased',
           MozOsxFontSmoothing: 'grayscale',
           textRendering: 'optimizeLegibility',
         },
-        body: {
-          margin: 0,
-          minHeight: '100dvh',
-        },
+        body: { margin: 0, minHeight: '100dvh' },
         '@media (prefers-reduced-motion: reduce)': {
           '*, *::before, *::after': {
             animationDuration: '0.01ms !important',
-            animationIterationCount: '1 !important',
             transitionDuration: '0.01ms !important',
             scrollBehavior: 'auto !important',
           },
@@ -126,13 +72,34 @@ export const theme = createTheme({
     },
     MuiCard: {
       styleOverrides: {
-        root: {
-          borderRadius: radius.lg,
-          backgroundImage: 'none',
-        },
+        root: { borderRadius: radius.lg, backgroundImage: 'none' },
       },
     },
   },
-})
+}
 
-export type AppTheme = typeof theme
+const buildTheme = (mode: PaletteMode) => {
+  const n = mode === 'light' ? neutralsLight : neutralsDark
+  const sem = semantic[mode]
+  return createTheme({
+    ...sharedOptions,
+    palette: {
+      mode,
+      primary: {
+        light: accent[300],
+        main: accent[400],
+        dark: accent[600],
+        contrastText: mode === 'light' ? '#FFFFFF' : neutralsDark.canvas,
+      },
+      background: { default: n.canvas, paper: n.surface },
+      text: { primary: n.textPrimary, secondary: n.textSecondary, disabled: n.textMuted },
+      divider: n.borderSubtle,
+      success: { main: sem.success },
+      warning: { main: sem.warning },
+      error: { main: sem.error },
+    },
+  })
+}
+
+export const lightTheme = buildTheme('light')
+export const darkTheme = buildTheme('dark')

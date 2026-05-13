@@ -2,40 +2,30 @@ import ContrastIcon from '@mui/icons-material/Contrast'
 import DarkModeIcon from '@mui/icons-material/DarkModeOutlined'
 import LightModeIcon from '@mui/icons-material/LightModeOutlined'
 import { IconButton, Tooltip } from '@mui/material'
-import { useColorScheme } from '@mui/material/styles'
+import type { ThemeMode } from '@/theme/ThemeModeContext'
+import { useThemeMode } from '@/theme/ThemeModeContext'
 
-type Mode = 'system' | 'light' | 'dark'
-
-const iconFor: Record<Mode, typeof ContrastIcon> = {
+const iconFor: Record<ThemeMode, typeof ContrastIcon> = {
   system: ContrastIcon,
   light: LightModeIcon,
   dark: DarkModeIcon,
 }
 
-const labelFor: Record<Mode, string> = {
+const labelFor: Record<ThemeMode, string> = {
   system: 'System theme (click for light)',
   light: 'Light theme (click for dark)',
   dark: 'Dark theme (click for system)',
 }
 
-const nextMode: Record<Mode, Mode> = {
-  system: 'light',
-  light: 'dark',
-  dark: 'system',
-}
-
 export const ThemeToggle = () => {
-  const { mode, setMode } = useColorScheme()
-  if (!mode) return null
-
-  const current = mode as Mode
-  const Icon = iconFor[current]
+  const { mode, cycleMode } = useThemeMode()
+  const Icon = iconFor[mode]
 
   return (
-    <Tooltip title={labelFor[current]}>
+    <Tooltip title={labelFor[mode]}>
       <IconButton
-        onClick={() => setMode(nextMode[current])}
-        aria-label={labelFor[current]}
+        onClick={cycleMode}
+        aria-label={labelFor[mode]}
         size="medium"
         sx={{
           color: 'text.primary',
